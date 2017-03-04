@@ -11,16 +11,20 @@ body {
 .resume-all {
     margin: 40px auto;
     font-family: "Arial";
-    width: 1200px;
+    width: 950px;
 
-}
-.resume{
-	width: 550px;
 }
 .resume__block{
 	display: inline-block;
 	vertical-align: top;
+}
+.resume__block1{
+	margin-top: 20px;
 	margin-right: 40px;
+	width: 350px;
+}
+.resume__block2{
+	width: 550px;
 }
 
 .resume__name {
@@ -29,19 +33,19 @@ body {
 }
 
 .resume__name_circle {
-    width: 120px;
-    height: 120px;
+    width: 170px;
+    height: 170px;
     border: 1px solid #036FBC;
     border-radius: 100%;
-    margin-left: 215px;
+    margin-left: 95px;
 }
 
 .resume__name_circle-second {
     border: 1px solid #036FBC;
     background-color: #036FBC;
     margin: 9px;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     border-radius: 100%;
 }
 
@@ -58,6 +62,7 @@ body {
 .resume__name-small-bold-font {
     font-size: 14px;
     font-family: "Arial Black";
+
 }
 
 .resume__profile-h1 {
@@ -65,12 +70,13 @@ body {
     margin-left: 0;
     margin-bottom: 0;
     background: url(icons.jpg) no-repeat 0 -5px;
-    background-position: 0 -7px;
+    background-position: -7px -7px;
     font-size: 30px;
     background-size: 70px ;
     overflow: hidden;
     padding-left: 60px;
     color: #036FBC;
+    margin-top: 70px;
 }
 
 .resume__profile-line {
@@ -98,12 +104,13 @@ body {
     margin-left: 0;
     margin-bottom: 0;
     background: url(icons.jpg) no-repeat 0 -5px;
-    background-position: 0 -56px;
+    background-position: -7px -56px;
     font-size: 30px;
     background-size: 70px ;
     overflow: hidden;
     padding-left: 60px;
     color: #036FBC;
+    margin-top: 40px;
 }
 
 .resume__contact-line {
@@ -127,25 +134,27 @@ body {
 }
 .resume__contact-table-th{
 	color: #036FBC;
-	padding-top: 15px;
+	padding-top: 25px;
+	vertical-align: bottom;
 
 }
 .resume__contact-table-td{
 	padding-left: 30px;
 	padding-top: 15px;
-
+	vertical-align: bottom;
 }
 .resume__skills-h1 {
 	line-height: 50px;
     margin-left: 0;
     margin-bottom: 0;
     background: url(icons.jpg) no-repeat 0 -5px;
-    background-position: 0 -111px;
+    background-position: -7px -111px;
     font-size: 30px;
     background-size: 70px ;
     overflow: hidden;
     padding-left: 60px;
     color: #036FBC;
+    margin-top: 40px;
 }
 
 .resume__skills-line {
@@ -190,7 +199,7 @@ body {
     margin-left: 0;
     margin-bottom: 0;
     background: url(icons.jpg) no-repeat 0 -5px;
-    background-position: 0 -165px;
+    background-position: -7px -165px;
     font-size: 30px;
     background-size: 70px ;
     overflow: hidden;
@@ -240,12 +249,13 @@ padding-left: 8px;
     margin-left: 0;
     margin-bottom: 0;
     background: url(icons.jpg) no-repeat 0 -5px;
-    background-position: 0 -165px;
+    background-position: -7px -165px;
     font-size: 30px;
     background-size: 70px ;
     overflow: hidden;
     padding-left: 60px;
     color: #036FBC;
+    margin-top: 40px;
 }
 
 .resume__exp-line {
@@ -288,12 +298,13 @@ padding-left: 8px;
     margin-left: 0;
     margin-bottom: 0;
     background: url(icons.jpg) no-repeat 0 -5px;
-    background-position: 0 -221px;
+    background-position: -7px -221px;
     font-size: 30px;
     background-size: 70px ;
     overflow: hidden;
     padding-left: 60px;
     color: #036FBC;
+    margin-top: 40px;
 }
 
 .resume__soft-line {
