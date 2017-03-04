@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.resume-all {
+    margin: 40px auto;
+    font-family: "Arial";
+    width: 1200px;
+
+}
+.resume{
+	width: 550px;
+}
+.resume__block{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 40px;
+}
+
+.resume__name {
+    text-align: center;
+    line-height: 22px;
+}
+
+.resume__name_circle {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #036FBC;
+    border-radius: 100%;
+    margin-left: 215px;
+}
+
+.resume__name_circle-second {
+    border: 1px solid #036FBC;
+    background-color: #036FBC;
+    margin: 9px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.resume__name_big-font {
+    font-size: 30px;
+}
+
+.resume__name_big-bold-font {
+    font-size: 30px;
+    font-family: "Arial Black";
+    letter-spacing: 2px;
+}
+
+.resume__name-small-bold-font {
+    font-size: 14px;
+    font-family: "Arial Black";
+}
+
+.resume__profile-h1 {
+	line-height: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
+    background: url(icons.jpg) no-repeat 0 -5px;
+    background-position: 0 -7px;
+    font-size: 30px;
+    background-size: 70px ;
+    overflow: hidden;
+    padding-left: 60px;
+    color: #036FBC;
+}
+
+.resume__profile-line {
+    overflow: hidden;
+}
+
+.resume__profile-line::after {
+    margin-right: -100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    background: #036FBC;
+}
+.resume__profile-lorem{
+	color: black;
+	font-size: 14px;
+}
+
+.resume__contact-h1 {
+	line-height: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
+    background: url(icons.jpg) no-repeat 0 -5px;
+    background-position: 0 -56px;
+    font-size: 30px;
+    background-size: 70px ;
+    overflow: hidden;
+    padding-left: 60px;
+    color: #036FBC;
+}
+
+.resume__contact-line {
+    overflow: hidden;
+}
+
+.resume__contact-line::after {
+    margin-right: -100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    background: #036FBC;
+}
+.resume__contact-table{
+	text-align: left;
+	font-size: 14px;
+}
+.resume__contact-table-th{
+	color: #036FBC;
+	padding-top: 15px;
+
+}
+.resume__contact-table-td{
+	padding-left: 30px;
+	padding-top: 15px;
+
+}
+.resume__skills-h1 {
+	line-height: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
+    background: url(icons.jpg) no-repeat 0 -5px;
+    background-position: 0 -111px;
+    font-size: 30px;
+    background-size: 70px ;
+    overflow: hidden;
+    padding-left: 60px;
+    color: #036FBC;
+}
+
+.resume__skills-line {
+    overflow: hidden;
+}
+
+.resume__skills-line::after {
+    margin-right: -100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    background: #036FBC;
+}
+
+.resume__skills_skill{
+	text-align: center;
+}
+.resume__skills_skill-h5{
+	margin-bottom: 0;
+}
+.resume__skills_skill-ul{
+	text-align: center;
+	margin-left: -40px;
+	margin-top: 5px;
+}
+.resume__skills_skill-li {
+	list-style: none;
+	border: 8px solid #E7E7E7;
+	display: inline-block;
+	border-radius: 100%;
+	margin-right: 5px;
+}
+.resume__skills_skill-li-blue{
+	border-color: #036FBC;
+}
+.resume__educ-h1 {
+	line-height: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
+    background: url(icons.jpg) no-repeat 0 -5px;
+    background-position: 0 -165px;
+    font-size: 30px;
+    background-size: 70px ;
+    overflow: hidden;
+    padding-left: 60px;
+    color: #036FBC;
+}
+
+.resume__educ-line {
+    overflow: hidden;
+}
+
+.resume__educ-line::after {
+    margin-right: -100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    background: #036FBC;
+}
+
+.resume_education_ul{
+padding-left: 8px;
+	font-size: 20px;
+}
+.resume_education_li{
+	list-style: none;
+	background: url(list-style.jpg) no-repeat 0 3px;
+	padding-left: 40px;
+}
+.resume_education_li-color{
+	color:#036FBC;
+}
+.resume_education_li-univer{
+	margin-top: 5px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.resume_education_li-lorem{
+	font-size: 14px;
+}
+
+.resume__exp-h1 {
+	line-height: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
+    background: url(icons.jpg) no-repeat 0 -5px;
+    background-position: 0 -165px;
+    font-size: 30px;
+    background-size: 70px ;
+    overflow: hidden;
+    padding-left: 60px;
+    color: #036FBC;
+}
+
+.resume__exp-line {
+    overflow: hidden;
+}
+
+.resume__exp-line::after {
+    margin-right: -100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    background: #036FBC;
+}
+.resume_exp_ul{
+	padding-left: 8px;
+	font-size: 20px;
+}
+.resume_exp_li{
+	list-style: none;
+	background: url(list-style.jpg) no-repeat 0 3px;
+	padding-left: 40px;
+}
+
+.resume_exp_li-job{
+	margin-top: 5px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.resume_exp_li-lorem{
+	font-size: 14px;
+}
+
+
+.resume__soft-h1 {
+	line-height: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
+    background: url(icons.jpg) no-repeat 0 -5px;
+    background-position: 0 -221px;
+    font-size: 30px;
+    background-size: 70px ;
+    overflow: hidden;
+    padding-left: 60px;
+    color: #036FBC;
+}
+
+.resume__soft-line {
+    overflow: hidden;
+}
+
+.resume__soft-line::after {
+    margin-right: -100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    background: #036FBC;
+}
+
+.resume__software_soft{
+	display: inline-block;
+	margin: 20px 20px 0 0;
+}
+.resume__software_soft-bg-grey{
+	background-color: #e7e7e7;
+	width: 250px;
+	height: 20px;
+}
+.resume__software_photo-bg-blue{
+	background-color: #036fbc;
+	height: 100%;
+	width: 95%;
+}
+.resume__software_dreamw-bg-blue{
+	background-color: #036fbc;
+	height: 100%;
+	width: 85%;
+}
+.resume__software_ill-bg-blue{
+	background-color: #036fbc;
+	height: 100%;
+	width: 75%;
+}
+.resume__software_atfeff-bg-blue{
+	background-color: #036fbc;
+	height: 100%;
+	width: 70%;
+}
+.resume__software_indes-bg-blue{
+	background-color: #036fbc;
+	height: 100%;
+	width: 60%;
+}
+.resume__software_htmlcss3-bg-blue{
+	background-color: #036fbc;
+	height: 100%;
+	width: 95%;
+}
