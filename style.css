@@ -1,6 +1,9 @@
+html{
+	font-size: 1px;
+}
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     background-color: #fff;
 }
 
@@ -9,9 +12,9 @@ body {
 }
 
 .resume-all {
-    margin: 40px auto;
+    margin: 40rem auto;
     font-family: "Arial";
-    width: 950px;
+    width: 950rem;
 
 }
 .resume__block{
@@ -19,64 +22,65 @@ body {
 	vertical-align: top;
 }
 .resume__block1{
-	margin-top: 20px;
-	margin-right: 40px;
-	width: 350px;
+	margin-top: 20rem;
+	margin-right: 40rem;
+	width: 350rem;
 }
 .resume__block2{
-	width: 550px;
+	width: 550rem;
 }
 
 .resume__name {
     text-align: center;
-    line-height: 22px;
+    line-height: 22rem;
 }
 
 .resume__name_circle {
-    width: 170px;
-    height: 170px;
-    border: 1px solid #036FBC;
+    width: 170rem;
+    height: 170rem;
+    border: 1rem solid #036FBC;
     border-radius: 100%;
-    margin-left: 95px;
+	margin: auto ;
+
 }
 
 .resume__name_circle-second {
-    border: 1px solid #036FBC;
+    border: 1rem solid #036FBC;
     background-color: #036FBC;
-    margin: 9px;
-    height: 150px;
-    width: 150px;
+    margin: 10rem ;
+    height: 149rem;
+    width: 149rem;
     border-radius: 100%;
 }
 
 .resume__name_big-font {
-    font-size: 30px;
+    font-size: 30rem;
 }
 
 .resume__name_big-bold-font {
-    font-size: 30px;
+    font-size: 30rem;
     font-family: "Arial Black";
-    letter-spacing: 2px;
+    letter-spacing: 2rem;
 }
 
 .resume__name-small-bold-font {
-    font-size: 14px;
+    font-size: 14rem;
     font-family: "Arial Black";
 
 }
 
 .resume__profile-h1 {
-	line-height: 50px;
+	line-height: 50rem;
     margin-left: 0;
     margin-bottom: 0;
-    background: url(icons.jpg) no-repeat 0 -5px;
-    background-position: -7px -7px;
-    font-size: 30px;
-    background-size: 70px ;
+    background: url(icons.jpg) no-repeat 0 -5rem;
+    background-position: -7rem -7rem;
+    font-size: 30rem;
+    background-size: 70rem ;
     overflow: hidden;
-    padding-left: 60px;
+    padding-left: 60rem;
     color: #036FBC;
-    margin-top: 70px;
+    margin-top: 70rem;
 }
 
 .resume__profile-line {
@@ -85,32 +89,32 @@ body {
 
 .resume__profile-line::after {
     margin-right: -100%;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
     content: '';
     display: inline-block;
     box-sizing: border-box;
     width: 100%;
-    height: 3px;
+    height: 3rem;
     background: #036FBC;
 }
 .resume__profile-lorem{
 	color: black;
-	font-size: 14px;
+	font-size: 14rem;
 }
 
 .resume__contact-h1 {
-	line-height: 50px;
+	line-height: 50rem;
     margin-left: 0;
     margin-bottom: 0;
-    background: url(icons.jpg) no-repeat 0 -5px;
-    background-position: -7px -56px;
-    font-size: 30px;
-    background-size: 70px ;
+    background: url(icons.jpg) no-repeat 0 -5rem;
+    background-position: -7rem -56rem;
+    font-size: 30rem;
+    background-size: 70rem ;
     overflow: hidden;
-    padding-left: 60px;
+    padding-left: 60rem;
     color: #036FBC;
-    margin-top: 40px;
+    margin-top: 40rem;
 }
 
 .resume__contact-line {
@@ -119,42 +123,42 @@ body {
 
 .resume__contact-line::after {
     margin-right: -100%;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
     content: '';
     display: inline-block;
     box-sizing: border-box;
     width: 100%;
-    height: 3px;
+    height: 3rem;
     background: #036FBC;
 }
 .resume__contact-table{
 	text-align: left;
-	font-size: 14px;
+	font-size: 14rem;
 }
 .resume__contact-table-th{
 	color: #036FBC;
-	padding-top: 25px;
+	padding-top: 25rem;
 	vertical-align: bottom;
 
 }
 .resume__contact-table-td{
-	padding-left: 30px;
-	padding-top: 15px;
+	padding-left: 30rem;
+	padding-top: 15rem;
 	vertical-align: bottom;
 }
 .resume__skills-h1 {
-	line-height: 50px;
+	line-height: 50rem;
     margin-left: 0;
     margin-bottom: 0;
-    background: url(icons.jpg) no-repeat 0 -5px;
-    background-position: -7px -111px;
-    font-size: 30px;
-    background-size: 70px ;
+    background: url(icons.jpg) no-repeat 0 -5rem;
+    background-position: -7rem -111rem;
+    font-size: 30rem;
+    background-size: 70rem ;
     overflow: hidden;
-    padding-left: 60px;
+    padding-left: 60rem;
     color: #036FBC;
-    margin-top: 40px;
+    margin-top: 40rem;
 }
 
 .resume__skills-line {
@@ -163,47 +167,51 @@ body {
 
 .resume__skills-line::after {
     margin-right: -100%;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
     content: '';
     display: inline-block;
     box-sizing: border-box;
     width: 100%;
-    height: 3px;
+    height: 3rem;
     background: #036FBC;
 }
 
 .resume__skills_skill{
 	text-align: center;
+
 }
 .resume__skills_skill-h5{
 	margin-bottom: 0;
+	font-size: 18rem;
+	font-weight: normal;
 }
 .resume__skills_skill-ul{
 	text-align: center;
-	margin-left: -40px;
-	margin-top: 5px;
+	/*margin-left: -40rem;*/
+	margin-top: 5rem;
+	padding: 0 5%;
 }
 .resume__skills_skill-li {
 	list-style: none;
-	border: 8px solid #E7E7E7;
+	border: 8rem solid #E7E7E7;
 	display: inline-block;
 	border-radius: 100%;
-	margin-right: 5px;
+	margin-right: 10rem;
 }
 .resume__skills_skill-li-blue{
 	border-color: #036FBC;
 }
 .resume__educ-h1 {
-	line-height: 50px;
+	line-height: 50rem;
     margin-left: 0;
     margin-bottom: 0;
-    background: url(icons.jpg) no-repeat 0 -5px;
-    background-position: -7px -165px;
-    font-size: 30px;
-    background-size: 70px ;
+    background: url(icons.jpg) no-repeat 0 -5rem;
+    background-position: -7rem -165rem;
+    font-size: 30rem;
+    background-size: 70rem ;
     overflow: hidden;
-    padding-left: 60px;
+    padding-left: 60rem;
     color: #036FBC;
 }
 
@@ -213,49 +221,50 @@ body {
 
 .resume__educ-line::after {
     margin-right: -100%;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
     content: '';
     display: inline-block;
     box-sizing: border-box;
     width: 100%;
-    height: 3px;
+    height: 3rem;
     background: #036FBC;
 }
 
 .resume_education_ul{
-padding-left: 8px;
-	font-size: 20px;
+	padding-left: 8rem;
+	font-size: 20rem;
 }
 .resume_education_li{
 	list-style: none;
-	background: url(list-style.jpg) no-repeat 0 3px;
-	padding-left: 40px;
+	background: url(list-style.jpg) no-repeat 0 3rem;
+	padding-left: 40rem;
+	background-size: 18rem;
 }
 .resume_education_li-color{
 	color:#036FBC;
 }
 .resume_education_li-univer{
-	margin-top: 5px;
+	margin-top: 5rem;
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
 .resume_education_li-lorem{
-	font-size: 14px;
+	font-size: 14rem;
 }
 
 .resume__exp-h1 {
-	line-height: 50px;
+	line-height: 50rem;
     margin-left: 0;
     margin-bottom: 0;
-    background: url(icons.jpg) no-repeat 0 -5px;
-    background-position: -7px -165px;
-    font-size: 30px;
-    background-size: 70px ;
+    background: url(icons.jpg) no-repeat 0 -5rem;
+    background-position: -7rem -165rem;
+    font-size: 30rem;
+    background-size: 70rem ;
     overflow: hidden;
-    padding-left: 60px;
+    padding-left: 60rem;
     color: #036FBC;
-    margin-top: 40px;
+    margin-top: 40rem;
 }
 
 .resume__exp-line {
@@ -264,47 +273,48 @@ padding-left: 8px;
 
 .resume__exp-line::after {
     margin-right: -100%;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
     content: '';
     display: inline-block;
     box-sizing: border-box;
     width: 100%;
-    height: 3px;
+    height: 3rem;
     background: #036FBC;
 }
 .resume_exp_ul{
-	padding-left: 8px;
-	font-size: 20px;
+	padding-left: 8rem;
+	font-size: 20rem;
 }
 .resume_exp_li{
 	list-style: none;
-	background: url(list-style.jpg) no-repeat 0 3px;
-	padding-left: 40px;
+	background: url(list-style.jpg) no-repeat 0 3rem;
+	padding-left: 40rem;
+	background-size: 18rem;
 }
 
 .resume_exp_li-job{
-	margin-top: 5px;
+	margin-top: 5rem;
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
 .resume_exp_li-lorem{
-	font-size: 14px;
+	font-size: 14rem;
 }
 
 
 .resume__soft-h1 {
-	line-height: 50px;
+	line-height: 50rem;
     margin-left: 0;
     margin-bottom: 0;
-    background: url(icons.jpg) no-repeat 0 -5px;
-    background-position: -7px -221px;
-    font-size: 30px;
-    background-size: 70px ;
+    background: url(icons.jpg) no-repeat 0 -5rem;
+    background-position: -7rem -221rem;
+    font-size: 30rem;
+    background-size: 70rem ;
     overflow: hidden;
-    padding-left: 60px;
+    padding-left: 60rem;
     color: #036FBC;
-    margin-top: 40px;
+    margin-top: 40rem;
 }
 
 .resume__soft-line {
@@ -313,24 +323,25 @@ padding-left: 8px;
 
 .resume__soft-line::after {
     margin-right: -100%;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
     content: '';
     display: inline-block;
     box-sizing: border-box;
     width: 100%;
-    height: 3px;
+    height: 3rem;
     background: #036FBC;
 }
 
 .resume__software_soft{
 	display: inline-block;
-	margin: 20px 20px 0 0;
+	margin: 20rem 20rem 0 0;
+	font-size: 18rem;
 }
 .resume__software_soft-bg-grey{
 	background-color: #e7e7e7;
-	width: 250px;
-	height: 20px;
+	width: 250rem;
+	height: 20rem;
 }
 .resume__software_photo-bg-blue{
 	background-color: #036fbc;
