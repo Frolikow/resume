@@ -23,6 +23,7 @@ body {
     margin: 0;
     padding: 0.7rem;
     background-color: #fff;
+    text-align: center;
 }
 
 .bold{
@@ -31,20 +32,23 @@ body {
 
 .resume {
     margin: 2.85rem auto;
-    width: 67.86rem;
-
 }
 .resume__column{
 	display: inline-block;
 	vertical-align: top;
+	text-align: left;
+/*	border: 1px dashed black;*/
+	min-width: 22rem;
+	padding: 2.5rem;
 }
 .resume__columnLeft{
-	margin-top: 1.40.21rem;
-	margin-right: 2.85rem;
-	width: 25rem;
+	width: 40%; 
+	max-width: 25rem;
 }
 .resume__columnRight{
-	width: 39.3rem;
+	width: 60%; 
+	max-width: 39.3rem;
+
 }
 
 .columnLeft__name {
@@ -203,7 +207,7 @@ body {
 }
 .columnLeft__skills_skill-ul{
 	text-align: center;
-	/*margin-left: -2.86rem;*/
+
 	margin-top: 0.35rem;
 	padding: 0;
 }
@@ -212,7 +216,7 @@ body {
 	border: 0.57rem solid #E7E7E7;
 	display: inline-block;
 	border-radius: 100%;
-	margin-right: 0.71rem;
+	margin-right: 0.5rem;
 }
 .columnLeft__skills_skill-li-blue{
 	border-color: #036FBC;
