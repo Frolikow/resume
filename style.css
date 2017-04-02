@@ -1,9 +1,18 @@
 @font-face{
 	font-family: "Myriad Pro";
 	src: url(fonts/myriadPro.ttf);
-    src: url(fonts/myriadPro.woff);
-    src: url(fonts/myriadPro.svg);
-    src: url(fonts/myriadPro.eot);
+}
+@font-face{
+	font-family: "Myriad Pro";
+	src: url(fonts/myriadPro.svg);
+}
+@font-face{
+	font-family: "Myriad Pro";
+	src: url(fonts/myriadPro.eot);
+}
+@font-face{
+	font-family: "Myriad Pro";
+	src: url(fonts/myriadPro.woff);
 }
 
 html{
