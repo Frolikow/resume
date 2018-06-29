@@ -1,0 +1,37 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Для скачивания проекта выполнить в нужном каталоге команду:",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "pug": "^2.0.3",
+    "pug-html-loader": "^1.1.5",
+    "pug-loader": "^2.4.0",
+    "style-loader": "^0.21.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --env development",
+    "build": "./node_modules/.bin/webpack --env production",
+    "deploy": "gh-pages -d public/UIkit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frolikow/resume.git"
+  },
+  "author": "frolikow egor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frolikow/resume/issues"
+  },
+  "homepage": "https://github.com/Frolikow/resume#readme"
+}
