@@ -6,7 +6,7 @@
   src: url(styles/fonts/myriadPro.woff);
 }
 html {
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
   background-color: #fff;
   font-family: "Myriad Pro", Arial, sans-serif;
