@@ -12,7 +12,7 @@ const common = {
   context: __dirname + '/src',
   entry: "./entry",
   output: {
-    path: path.resolve(__dirname, 'public/resume'),
+    path: path.resolve(__dirname, 'public'),
     filename: "bundle/[name].js",
     publicPath: ''
   },
