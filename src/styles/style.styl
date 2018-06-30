@@ -13,7 +13,6 @@ html
  
 body  
   margin  0 
-  padding  0.7rem 
   text-align  center 
 
 .bold 
@@ -28,39 +27,11 @@ body
     min-width  22rem 
     padding  2.5rem 
     width  50%  
-  &__columnLeft 
+  &__column_left 
     max-width  25rem 
-  &__columnRight 
+  &__column_right 
     max-width  39.3rem 
 
-.content 
-  color  black 
- 
-.title 
-  line-height  3.57rem 
-  margin-left  0 
-  margin-bottom  0 
-  background  url(icons/icons.jpg) no-repeat 0 0.5rem 
-  font-size  2.14rem 
-  background-size  5rem  
-  overflow  hidden 
-  padding-left  4.28rem 
-  color  #036FBC 
-  margin-top  2.86rem 
-  text-transform  uppercase 
-  &__line 
-    overflow  hidden 
-  &__line:after 
-    margin-right  -100% 
-    margin-bottom  0.71rem 
-    margin-left  0.71rem 
-    content  '' 
-    display  inline-block 
-    box-sizing  border-box 
-    width  100% 
-    height  0.21rem 
-    background  #036FBC 
- 
 .candidate
   &__photo 
     width  12.1rem 
@@ -80,7 +51,7 @@ body
     line-height  1.57rem 
     text-transform  uppercase 
     padding-top  2.39rem 
-    &_firstName 
+    &_first-name 
       font-size  2.3rem 
       font-weight  200 
     &_surname 
@@ -91,37 +62,33 @@ body
     &_proffesion 
       font-size  1rem 
       letter-spacing  0.05rem 
+
+.profile
+  &__content 
+    color  black 
+
+.contact
+  &__table 
+    text-align  left 
+    &_question
+      color  #036FBC 
+      padding-top  1.78rem 
+      vertical-align  bottom 
+      text-transform  uppercase 
+    &_value
+      padding-left  2.14rem 
+      padding-top  1.07rem 
+      vertical-align  bottom 
  
-.titleProfile 
-  background-position  -0.45rem -0.5rem 
-.titleContact 
-  background-position  -0.45rem -4.3rem 
+
  
-.contact-table 
-  text-align  left 
- 
-.contact-question 
-  color  #036FBC 
-  padding-top  1.78rem 
-  vertical-align  bottom 
-  text-transform  uppercase 
- 
-.contact-value 
-  padding-left  2.14rem 
-  padding-top  1.07rem 
-  vertical-align  bottom 
- 
-.titleSkills 
-  background-position  -0.45rem -8.1rem 
- 
-.content__skill 
-  text-align  center 
- 
-.skill 
+.skills
   margin-bottom  0 
   font-size  1.28rem 
   font-weight  normal 
   text-transform  uppercase 
+  &__content 
+  text-align  center 
   &__level 
     text-align  center 
     margin-top  0.35rem 
@@ -132,62 +99,68 @@ body
     display  inline-block 
     border-radius  100% 
     margin-right  0.5rem 
+    &_color-blue 
+      border-color  #036FBC 
  
-.value_color-blue 
-  border-color  #036FBC 
  
-.titleEducation 
-  background-position  -0.45rem -12rem 
- 
-.content__education 
-  padding-left  0.57rem 
-  font-size  1.28rem 
- 
-.education 
-  list-style  none 
-  background  url(icons/list-style.jpg) no-repeat 0 0.1rem 
-  padding-left  2.86rem 
-  background-size  1.28rem 
-  &__level_color-blue 
+.education
+  &__content 
+    padding-left  0.57rem 
+    &_list-item 
+      margin-left 3.5rem
+      padding-left  0.26rem 
+      font-size 5rem
+      line-height: 1.43rem 
+  &__degree_color-blue 
     color #036FBC 
     text-transform  uppercase 
-  &__university_font-courier 
-    margin-top  0.35rem 
-    margin-bottom  0 
-    padding-bottom  0 
-    font-family  "Courier" 
-    text-transform  uppercase 
-  &__university_content-lorem 
-    font-size  1rem 
-  &__job_content-lorem 
-    font-size  1rem 
- 
-.titleExpirience 
-  background-position  -0.45rem -15.75rem    
- 
-.content__expirience 
-  padding-left  0.57rem 
-  font-size  1.43rem 
- 
-.expirience 
-  list-style  none 
-  background  url(icons/list-style.jpg) no-repeat 0 0.1rem 
-  padding-left  2.86rem 
-  background-size  1.28rem 
-  &__company-name 
-    text-transform  uppercase 
-  &__job_font-courier 
-    margin-top  0.35rem 
-    margin-bottom  0 
-    padding-bottom  0 
-    font-family  "Courier" 
-    text-transform  uppercase 
- 
-.titlesoftware 
-  background-position  -0.45rem -19.78rem   
+    font-size 1.28rem
+    vertical-align: middle
+  &__degree_date
+    font-size 1.28rem
+    vertical-align: middle
+  &__university
+    &_font-courier 
+      font-size 1.28rem
+      line-height: 1.1rem
+      margin-top  0.35rem 
+      margin-bottom  0 
+      padding-bottom  0 
+      font-family  "Courier" 
+      text-transform  uppercase 
+    &_content-lorem 
+      margin-top 0.5rem
+      font-size  1rem 
 
-.software
-  &__level 
+.experience
+  &__content 
+    padding-left 0.57rem 
+    &_list-item 
+      margin-left 3.5rem
+      padding-left  0.26rem 
+      font-size 5rem
+      line-height: 1.43rem
+  &__company_name
+    text-transform  uppercase 
+    font-size 1.43rem
+    vertical-align: middle
+  &__company_date
+    font-size 1.43rem
+    vertical-align: middle
+  &__job_font-courier
+    font-size 1.43rem
+    margin-top  0.35rem 
+    margin-bottom  0 
+    padding-bottom  0 
+    font-family  "Courier" 
+    text-transform  uppercase 
+  &__job_content-lorem
+    margin-top 0.5rem
+    font-size: 1rem
+ 
+
+.software__content
+  .software__level 
     display  inline-block 
     margin  1.43rem 1.43rem 0 0 
     font-size  1.28rem 
@@ -212,3 +185,40 @@ body
       width  60% 
     &_htmlCss3 
       width  95% 
+
+.title 
+  line-height  3.57rem 
+  margin-left  0 
+  margin-bottom  0 
+  background  url(icons/icons.jpg) no-repeat 0 0.5rem 
+  font-size  2.14rem 
+  background-size  5rem  
+  overflow  hidden 
+  padding-left  4.28rem 
+  color  #036FBC 
+  margin-top  2.86rem 
+  text-transform  uppercase 
+  &__line 
+    overflow  hidden 
+  &__line:after 
+    margin-right  -100% 
+    margin-bottom  0.71rem 
+    margin-left  0.71rem 
+    content  '' 
+    display  inline-block 
+    box-sizing  border-box 
+    width  100% 
+    height  0.21rem 
+    background  #036FBC 
+  &_software 
+    background-position -0.45rem -19.78rem
+  &_experience 
+    background-position -0.45rem -15.75rem
+  &_education 
+    background-position -0.45rem -12rem 
+  &_skills 
+    background-position -0.45rem -8.1rem 
+  &_profile 
+    background-position -0.45rem -0.5rem 
+  &_contact 
+    background-position -0.45rem -4.3rem 
