@@ -1,5 +1,12 @@
-doctype html 
+include ./modules/candidate/candidate-mixin.pug
+include ./modules/profile/profile-mixin.pug
+include ./modules/contact/contact-mixin.pug
+include ./modules/skills/skills-mixin.pug
+include ./modules/education/education-mixin.pug
+include ./modules/experience/experience-mixin.pug
+include ./modules/software/software-mixin.pug
 
+doctype html 
 html(lang="ru")
     head 
         meta(charset="utf-8") 
@@ -7,172 +14,11 @@ html(lang="ru")
     body
         .resume
             .resume__column.resume__column_left
-                header.candidate
-                    .candidate__photo
-                        .candidate__photo_inside
-
-                    .candidate__name 
-                        .candidate__name_first-name name here
-                        .candidate__name_surname.bold surname
-                        .candidate__name_proffesion.bold graphic designer
-
-                header.profile
-                    .title.title_profile.bold profile
-                        span.title__line
-
-                    .profile__content
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vero dolorem suscipit molestias asperiores placeat iusto ab aperiam, nemo, ipsum labore veniam. Nesciunt unde similique, odio facere! Ea, non aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dicta, esse. Omnis laudantium dolorem, quisquam saepe, cum magni, totam tenetur labore natus, suscipit debitis illo. Rem illo consequuntur consequatur.Lorem ipsum dolor sit amet, consectetur
-                            span.bold adipisicing elit. Saepe quaerat architecto fugit esse error placeat vel, iusto blanditiis, adipisci, eius maxime et tenetur odit. Aut deleniti voluptate sunt, mollitia rem!
-                    
-                header.contact
-                    .title.title_contact.bold contact
-                        span.title__line
-                    table.contact__table
-                        tr
-                            th.contact__table_question address
-                            td.contact__table_value Main Street, City.
-                        tr
-                            th.contact__table_question e-mail
-                            td.contact__table_value contact@domain.com
-                        tr
-                            th.contact__table_question phone
-                            td.contact__table_value 555-555-555
-                        tr
-                            th.contact__table_question website
-                            td.contact__table_value www.yourweb.com
-
-                header.skills
-                    .title.title_skills.bold skills
-                        span.title__line
-                    .skills__content
-                        h5.skills creative
-                        ul.skills__level
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value
-                            li.skills__value
-                            li.skills__value
-
-                    .skills__content
-                        h5.skills teamwork 
-                        ul.skills__level
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value
-
-                    .skills__content
-                        h5.skills innovate
-                        ul.skills__level
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value
-                            li.skills__value
-                            li.skills__value
-                            li.skills__value
-                            li.skills__value
-                            li.skills__value
-
-                    .skills__content
-                        h5.skills communication
-                        ul.skills__level
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value.skills__value_color-blue
-                            li.skills__value
-
+                +candidate-mixin
+                +profile-mixin
+                +contact-mixin
+                +skills-mixin
             .resume__column.resume__column_right
-                header.education
-                    .title.title_education.bold education
-                        span.title__line
-                    ul.education__content
-                        li.education__content_list-item
-                            span.education__degree_color-blue.bold master degree </span>
-                            span.education__degree_date // Feb 2011 - Jun 2014
-                            p.education__university_font-courier university name
-                            p.education__university_content-lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiis accusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima.
-                        li.education__content_list-item
-                            span.education__degree_color-blue.bold master degree </span>
-                            span.education__degree_date // Feb 2011 - Jun 2014
-                            p.education__university_font-courier university name
-                            p.education__university_content-lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil nobis enim quidem iusto ipsum doloribus reprehenderit id? Repellendus et porro voluptatibus facere eaque quasi, perspiciatis debitis quis expedita ratione. Quam.
-                        li.education__content_list-item
-                            span.education__degree_color-blue.bold master degree </span>
-                            span.education__degree_date // Feb 2011 - Jun 2014
-                            p.education__university_font-courier university name
-                            p.education__university_content-lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam omnis nemo nihil dolor inventore odit, esse dolorem ad dolores aspernatur accusamus quos, sed tempora a ipsum quibusdam saepe quam!
-                        li.education__content_list-item
-                            span.education__degree_color-blue.bold master degree </span>
-                            span.education__degree_date // Feb 2011 - Jun 2014
-                            p.education__university_font-courier university name
-                            p.education__university_content-lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptates id voluptate est labore placeat possimus delectus esse, tenetur nemo velit distinctio explicabo saepe accusantium! Eos recusandae, sit iste quo!
-
-                header.experience
-                    .title.title_experience.bold experience
-                        span.title__line 
-                    ul.experience__content
-                        li.experience__content_list-item
-                            span.experience__company_name.bold company name </span>
-                            span.experience__company_date // Feb 2011 - Jun 2014
-                            p.experience__job_font-courier your job here 
-                            p.experience__job_content-lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. 
-                        li.experience__content_list-item
-                            span.experience__company_name.bold company name </span>
-                            span.experience__company_date // Feb 2011 - Jun 2014
-                            p.experience__job_font-courier your job here 
-                            p.experience__job_content-lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil nobis enim quidem iusto ipsum doloribus reprehenderit id? Repellendus et porro voluptatibus facere eaque quasi, perspiciatis debitis quis expedita ratione. Quam. 
-                        li.experience__content_list-item
-                            span.experience__company_name.bold company name </span>
-                            span.experience__company_date // Feb 2011 - Jun 2014
-                            p.experience__job_font-courier your job here
-                            p.experience__job_content-lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam omnis nemo nihil dolor inventore odit, esse dolorem ad dolores aspernatur accusamus quos, sed tempora a ipsum quibusdam saepe quam!
-
-                header.software 
-                    .title.title_software.bold software
-                        span.title__line
-                    .software__content
-                        .software__level photoshop
-                            .software__level_color-gray
-                                .software__level_color-blue.software__level_photoshop
-                        .software__level dreamweaver
-                            .software__level_color-gray 
-                                .software__level_color-blue.software__level_dreamweaver 
-                        .software__level illustrator
-                            .software__level_color-gray 
-                                .software__level_color-blue.software__level_illustrator
-                        .software__level after effects
-                            .software__level_color-gray
-                                .software__level_color-blue.software__level_afterEffects 
-                        .software__level indesign
-                            .software__level_color-gray 
-                                .software__level_color-blue.software__level_indesign
-                        .software__level html & css3
-                            .software__level_color-gray 
-                                .software__level_color-blue.software__level_htmlCss3
+                +education-mixin
+                +experience-mixin
+                +software-mixin
