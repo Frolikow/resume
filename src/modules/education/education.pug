@@ -1,8 +1,9 @@
+include ./../title/title
+
 mixin education
 
     header.education
-        .title.title_education.bold education
-            span.title__line
+        +title('education')
         ul.education__content
             li.education__content_list-item
                 span.education__degree_color-blue.bold master degree </span>

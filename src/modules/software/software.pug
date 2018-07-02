@@ -1,8 +1,9 @@
+include ./../title/title
+
 mixin software
 
     header.software 
-        .title.title_software.bold software
-            span.title__line
+        +title('software')
         .software__content
             .software__level photoshop
                 .software__level_color-gray

@@ -1,8 +1,9 @@
+include ./../title/title
+
 mixin contact
 
     header.contact
-        .title.title_contact.bold contact
-            span.title__line
+        +title('contact')
         table.contact__table
             tr
                 th.contact__table_question address

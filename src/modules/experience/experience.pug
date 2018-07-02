@@ -1,8 +1,9 @@
+include ./../title/title
+
 mixin experience
 
     header.experience
-        .title.title_experience.bold experience
-            span.title__line 
+        +title('experience')
         ul.experience__content
             li.experience__content_list-item
                 span.experience__company_name.bold company name </span>

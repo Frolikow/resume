@@ -1,8 +1,9 @@
+include ./../title/title
+
 mixin skills
 
     header.skills
-        .title.title_skills.bold skills
-            span.title__line
+        +title('skills')
         .skills__content
             h5.skills creative
             ul.skills__level
