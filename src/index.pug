@@ -1,10 +1,10 @@
-include ./modules/candidate/candidate-mixin.pug
-include ./modules/profile/profile-mixin.pug
-include ./modules/contact/contact-mixin.pug
-include ./modules/skills/skills-mixin.pug
-include ./modules/education/education-mixin.pug
-include ./modules/experience/experience-mixin.pug
-include ./modules/software/software-mixin.pug
+include ./modules/candidate/candidate.pug
+include ./modules/profile/profile.pug
+include ./modules/contact/contact.pug
+include ./modules/skills/skills.pug
+include ./modules/education/education.pug
+include ./modules/experience/experience.pug
+include ./modules/software/software.pug
 
 doctype html 
 html(lang="ru")
@@ -14,11 +14,11 @@ html(lang="ru")
     body
         .resume
             .resume__column.resume__column_left
-                +candidate-mixin
-                +profile-mixin
-                +contact-mixin
-                +skills-mixin
+                +candidate
+                +profile
+                +contact
+                +skills
             .resume__column.resume__column_right
-                +education-mixin
-                +experience-mixin
-                +software-mixin
+                +education
+                +experience
+                +software

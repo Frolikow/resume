@@ -4,20 +4,19 @@
   src url(fonts/myriadPro.svg) 
   src url(fonts/myriadPro.eot) 
   src url(fonts/myriadPro.woff) 
+
+@require './../modules/**/*.styl'
  
 html 
   font-size  16px 
   color #000 
   background-color  #fff 
   font-family  "Myriad Pro", Arial, sans-serif 
- 
 body  
   margin  0 
   text-align  center 
-
 .bold 
   font-weight  bold 
- 
 .resume  
   margin  2.85rem auto 
   &__column 
@@ -31,160 +30,6 @@ body
     max-width  25rem 
   &__column_right 
     max-width  39.3rem 
-
-.candidate
-  &__photo 
-    width  12.1rem 
-    height  12.1rem 
-    border  0.07rem solid #036FBC 
-    border-radius  100% 
-    margin  auto  
-  &__photo_inside 
-    border  0.07rem solid #036FBC 
-    background-color  #036FBC 
-    margin  0.67rem  
-    height  10.6rem 
-    width  10.6rem 
-    border-radius  100% 
-  &__name 
-    text-align  center 
-    line-height  1.57rem 
-    text-transform  uppercase 
-    padding-top  2.39rem 
-    &_first-name 
-      font-size  2.3rem 
-      font-weight  200 
-    &_surname 
-      padding-top  0.5rem 
-      font-size  2.4rem 
-      letter-spacing  0.2rem 
-      font-weight  700 
-    &_proffesion 
-      font-size  1rem 
-      letter-spacing  0.05rem 
-
-.profile
-  &__content 
-    color  black 
-
-.contact
-  &__table 
-    text-align  left 
-    &_question
-      color  #036FBC 
-      padding-top  1.78rem 
-      vertical-align  bottom 
-      text-transform  uppercase 
-    &_value
-      padding-left  2.14rem 
-      padding-top  1.07rem 
-      vertical-align  bottom 
- 
-
- 
-.skills
-  margin-bottom  0 
-  font-size  1.28rem 
-  font-weight  normal 
-  text-transform  uppercase 
-  &__content 
-  text-align  center 
-  &__level 
-    text-align  center 
-    margin-top  0.35rem 
-    padding  0 
-  &__value 
-    list-style  none 
-    border  0.57rem solid #E7E7E7 
-    display  inline-block 
-    border-radius  100% 
-    margin-right  0.5rem 
-    &_color-blue 
-      border-color  #036FBC 
- 
- 
-.education
-  &__content 
-    padding-left  0.57rem 
-    &_list-item 
-      margin-left 3.5rem
-      padding-left  0.26rem 
-      font-size 5rem
-      line-height: 1.43rem 
-  &__degree_color-blue 
-    color #036FBC 
-    text-transform  uppercase 
-    font-size 1.28rem
-    vertical-align: middle
-  &__degree_date
-    font-size 1.28rem
-    vertical-align: middle
-  &__university
-    &_font-courier 
-      font-size 1.28rem
-      line-height: 1.1rem
-      margin-top  0.35rem 
-      margin-bottom  0 
-      padding-bottom  0 
-      font-family  "Courier" 
-      text-transform  uppercase 
-    &_content-lorem 
-      margin-top 0.5rem
-      font-size  1rem 
-
-.experience
-  &__content 
-    padding-left 0.57rem 
-    &_list-item 
-      margin-left 3.5rem
-      padding-left  0.26rem 
-      font-size 5rem
-      line-height: 1.43rem
-  &__company_name
-    text-transform  uppercase 
-    font-size 1.43rem
-    vertical-align: middle
-  &__company_date
-    font-size 1.43rem
-    vertical-align: middle
-  &__job_font-courier
-    font-size 1.43rem
-    margin-top  0.35rem 
-    margin-bottom  0 
-    padding-bottom  0 
-    font-family  "Courier" 
-    text-transform  uppercase 
-  &__job_content-lorem
-    margin-top 0.5rem
-    font-size: 1rem
- 
-
-.software__content
-  .software__level 
-    display  inline-block 
-    margin  1.43rem 1.43rem 0 0 
-    font-size  1.28rem 
-    text-transform  uppercase 
-    &_color-gray 
-      background-color  #e7e7e7 
-      width  18rem 
-      height  1.43rem 
-    &_color-blue 
-      background-color  #036fbc 
-      height  100% 
-      width  100% 
-    &_photoshop 
-      width  95% 
-    &_dreamweaver 
-      width  85% 
-    &_illustrator 
-      width  75% 
-    &_afterEffects 
-      width  70% 
-    &_indesign 
-      width  60% 
-    &_htmlCss3 
-      width  95% 
 
 .title 
   line-height  3.57rem 
