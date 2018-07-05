@@ -1,65 +1,11 @@
 include ./../title/title
+include ./skill-element/skill-element
 
 mixin skills
 
     header.skills
         +title('skills')
-        h5.skills__name creative
-        ul.skills__level
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value
-            li.skills__value
-            li.skills__value
-
-        h5.skills__name teamwork 
-        ul.skills__level
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value
-
-        h5.skills__name innovate
-        ul.skills__level
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value
-            li.skills__value
-            li.skills__value
-            li.skills__value
-            li.skills__value
-            li.skills__value
-
-        h5.skills__name communication
-        ul.skills__level
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value.skills__value_color_blue
-            li.skills__value
+        +skill-element('creative', 9, 12)
+        +skill-element('teamwork', 11, 12)
+        +skill-element('innovate', 6, 12)
+        +skill-element('communication', 11, 12)
