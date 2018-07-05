@@ -1,12 +1,16 @@
 .contact
-  &__table 
+  &__table-column
     text-align left 
-    &_question
+    display flex
+    flex-direction column
+    flex-wrap nowrap
+    margin-right 0
+    width 40%
+    line-height 2rem
+    vertical-align middle
+    padding-top 1.78rem 
+    &_left
       color #036FBC 
-      padding-top 1.78rem 
-      vertical-align bottom 
       text-transform uppercase 
-    &_value
-      padding-left 2.14rem 
-      padding-top 1.07rem 
-      vertical-align bottom 
+      float left
+      font-weight bold

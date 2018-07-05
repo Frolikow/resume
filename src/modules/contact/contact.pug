@@ -4,16 +4,13 @@ mixin contact
 
     section.contact
         +title('contact')
-        table.contact__table
-            tr
-                th.contact__table_question address
-                td.contact__table_value Main Street, City.
-            tr
-                th.contact__table_question e-mail
-                td.contact__table_value contact@domain.com
-            tr
-                th.contact__table_question phone
-                td.contact__table_value 555-555-555
-            tr
-                th.contact__table_question website
-                td.contact__table_value www.yourweb.com
+        .contact__table-column.contact__table-column_left
+            .contact__table-column_data address
+            .contact__table-column_data e-mail
+            .contact__table-column_data phone
+            .contact__table-column_data website
+        .contact__table-column.contact__table-column_right
+            .contact__table-column_data Main Street, City.
+            .contact__table-column_data contact@domain.com
+            .contact__table-column_data 555-555-555
+            .contact__table-column_data www.yourweb.com
