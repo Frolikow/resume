@@ -1,24 +1,13 @@
 include ./../title/title
+include ./software-element/software-element
 
 mixin software
 
     section.software 
         +title('software')
-        .software__level photoshop
-            .software__level_color_gray
-                .software__level_color_blue.software__level_photoshop
-        .software__level dreamweaver
-            .software__level_color_gray 
-                .software__level_color_blue.software__level_dreamweaver 
-        .software__level illustrator
-            .software__level_color_gray 
-                .software__level_color_blue.software__level_illustrator
-        .software__level after effects
-            .software__level_color_gray
-                .software__level_color_blue.software__level_afterEffects 
-        .software__level indesign
-            .software__level_color_gray 
-                .software__level_color_blue.software__level_indesign
-        .software__level html & css3
-            .software__level_color_gray 
-                .software__level_color_blue.software__level_htmlCss3
+        +software-element('photoshop', 95)
+        +software-element('dreamweaver', 85)
+        +software-element('illustrator', 75)
+        +software-element('after effects', 70)
+        +software-element('indesign', 60)
+        +software-element('html & css3', 95)
