@@ -1,3 +1,4 @@
+include ./modules/avatar/avatar.pug
 include ./modules/candidate/candidate.pug
 include ./modules/profile/profile.pug
 include ./modules/contact/contact.pug
@@ -14,6 +15,7 @@ html(lang="ru")
     body
         .resume
             .resume__column.resume__column_left
+                +avatar
                 +candidate
                 +profile
                 +contact
