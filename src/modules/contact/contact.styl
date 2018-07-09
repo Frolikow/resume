@@ -1,20 +1,21 @@
 @require './../../styles/colors.styl'
 
 .contact
-  
-  &__table-column
+  &__table
     text-align left 
     display flex
-    flex-direction column
-    flex-wrap nowrap
-    margin-right 0
-    width 40%
-    line-height 2rem
-    vertical-align middle
-    padding-top 1.78rem 
+    flex-direction row
+    flex-wrap wrap
 
-    &_left
-      color mainBlue 
-      text-transform uppercase 
-      float left
-      font-weight bold
+    &-column
+      margin-right 0
+      width 40%
+      line-height 2rem
+      vertical-align middle
+      padding-top 1.78rem 
+
+      &_left
+        color mainBlue 
+        text-transform uppercase 
+        font-weight bold
+        max-width 10rem
