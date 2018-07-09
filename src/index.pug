@@ -2,10 +2,10 @@ include ./modules/avatar/avatar.pug
 include ./modules/candidate/candidate.pug
 include ./modules/profile/profile.pug
 include ./modules/contact/contact.pug
-include ./modules/skills/skills.pug
-include ./modules/education/education.pug
-include ./modules/experience/experience.pug
-include ./modules/software/software.pug
+include ./modules/skills/skill-element.pug
+include ./modules/education/education-element.pug
+include ./modules/experience/experience-element.pug
+include ./modules/software/software-element.pug
 
 doctype html 
 html(lang="ru")
@@ -15,12 +15,67 @@ html(lang="ru")
     body
         .resume
             .resume__column.resume__column_left
-                +avatar
-                +candidate
-                +profile
-                +contact
-                +skills
+                +avatar() //-'./styles/icons/icons.jpg'
+                .candidate-name 
+                    +candidate('name here', 
+                        'surname', 
+                        'graphic designer')
+                section.profile
+                    +title('profile')
+                    +profile('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vero dolorem suscipit molestias asperiores placeat iusto ab aperiam, nemo, ipsum labore veniam. Nesciunt unde similique, odio facere! Ea, non aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dicta, esse. Omnis laudantium dolorem, quisquam saepe, cum magni, totam tenetur labore natus, suscipit debitis illo. Rem illo consequuntur consequatur.Lorem ipsum dolor sit amet, consectetur ', 
+                        'adipisicing elit. Saepe quaerat architecto fugit esse error placeat vel, iusto blanditiis, adipisci, eius maxime et tenetur odit. Aut deleniti voluptate sunt, mollitia rem!')
+                section.contact
+                    +title('contact')
+                    +contact('Main Street, City.', 
+                    'contact@domain.com',
+                    '555-555-555',
+                    'www.yourweb.com' )
+                section.skills
+                    +title('skills')
+                    +skill-element('creative', 9, 12)
+                    +skill-element('teamwork', 11, 12)
+                    +skill-element('innovate', 6, 12)
+                    +skill-element('communication', 11, 12)
             .resume__column.resume__column_right
-                +education
-                +experience
-                +software
+                section.education
+                    +title('education')
+                    ul.education__content
+                        +education-element('master degree',
+                            'Feb 2011 - Jun 2014',
+                            'university name',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiis accusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima.')
+                        +education-element('master degree',
+                            'Feb 2011 - Jun 2014',
+                            'university name',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiis accusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima.')
+                        +education-element('master degree',
+                            'Feb 2011 - Jun 2014',
+                            'university name',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiis accusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima.')
+                        +education-element('master degree',
+                            'Feb 2011 - Jun 2014',
+                            'university name',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiis accusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima.')
+                section.experience
+                    +title('experience')
+                    ul.experience__content
+                        +experience-element('company name',
+                            'Feb 2011 - Jun 2014',
+                            'your job here',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. ')
+                        +experience-element('company name',
+                            'Feb 2011 - Jun 2014',
+                            'your job here',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. ')
+                        +experience-element('company name',
+                            'Feb 2011 - Jun 2014',
+                            'your job here',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. ')
+                section.software 
+                    +title('software')
+                    +software-element('photoshop', 95)
+                    +software-element('dreamweaver', 85)
+                    +software-element('illustrator', 75)
+                    +software-element('after effects', 70)
+                    +software-element('indesign', 60)
+                    +software-element('html & css3', 95)
