@@ -15,7 +15,8 @@ html(lang="ru")
     body
         .resume
             .resume__column.resume__column_left
-                +avatar() //-'./styles/icons/icons.jpg'
+                .avatar
+                    +avatar() //-'./styles/icons/icons.jpg'
                 .candidate-name 
                     +candidate('name here', 
                         'surname', 
@@ -39,7 +40,7 @@ html(lang="ru")
             .resume__column.resume__column_right
                 section.education
                     +title('education')
-                    ul.education__content
+                    ul.education__list
                         +education-element('master degree',
                             'Feb 2011 - Jun 2014',
                             'university name',
@@ -58,7 +59,7 @@ html(lang="ru")
                             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiis accusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima.')
                 section.experience
                     +title('experience')
-                    ul.experience__content
+                    ul.experience__list
                         +experience-element('company name',
                             'Feb 2011 - Jun 2014',
                             'your job here',
