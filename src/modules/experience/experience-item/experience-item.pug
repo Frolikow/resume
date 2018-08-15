@@ -1,7 +1,7 @@
-mixin experience-element(name, date, position, text)
+mixin experience-element(data)
 
     li.experience-item
-        span.experience-item__company-name= name 
-        span.experience-item__company-date= ' // ' + date
-        p.experience-item__job-position= position
-        p.experience-item__job-text= text
+        span.experience-item__company-name= data.company_name 
+        span.experience-item__company-date= ' // ' + data.date
+        p.experience-item__job-position= data.position
+        p.experience-item__job-text= data.description

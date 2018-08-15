@@ -1,9 +1,9 @@
-mixin skill-element(name, value, length)
+mixin skill-element(data)
     .skill
-        h5.skill__name= name
+        h5.skill__name= data.name
         ul.skill__level
-            - for (var i = 1; i<=length; i++) {
-                if( i<=value )
+            - for (var i = 1; i<=data.length_scale; i++) {
+                if( i<=data.value_scale )
                     li.skill__value.skill__value_color_blue
                 else
                     li.skill__value

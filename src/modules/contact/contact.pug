@@ -1,14 +1,14 @@
-mixin contact(address, e_mail, phone, website)
+mixin contact(data)
 
     section.contact-list
         .contact-list__data-name address
-        span.contact-list__data-value= address 
+        span.contact-list__data-value= data.address 
 
         .contact-list__data-name e-mail
-        a.contact-list__data-value(href=`mailto:${e_mail}`)= e_mail 
+        a.contact-list__data-value(href=`mailto:${data.e_mail}`)= data.e_mail 
 
         .contact-list__data-name phone
-        a.contact-list__data-value(href=`tel:${phone}`)= phone   
+        a.contact-list__data-value(href=`tel:${data.phone}`)= data.phone   
 
         .contact-list__data-name website
-        a.contact-list__data-value(href=`${website}`)= website 
+        a.contact-list__data-value(href=`${data.website}`)= data.website 

@@ -1,6 +1,6 @@
 include ./../title/title
 
-mixin profile(text, important_text)
+mixin profile(data)
     section.profile
-        p.profile__content= text 
-            span.profile__important-info= important_text
+        p.profile__content= data.text 
+            span.profile__important-info= data.important_text

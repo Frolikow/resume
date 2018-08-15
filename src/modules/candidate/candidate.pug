@@ -1,9 +1,9 @@
 include ./avatar/avatar.pug
 
-mixin candidate(image_url, name, surname, profession)
+mixin candidate(data)
 
-    +avatar(`${image_url}`)
+    +avatar(`${data.image_url}`)
     .candidate-name 
-        .candidate-name__first-name= name
-        .candidate-name__surname= surname
-        .candidate-name__profession= profession 
+        .candidate-name__first-name= data.name
+        .candidate-name__surname= data.surname
+        .candidate-name__profession= data.profession 
