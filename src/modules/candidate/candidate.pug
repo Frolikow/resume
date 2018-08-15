@@ -1,5 +1,9 @@
-mixin candidate(name, surname, profession)
+include ./avatar/avatar.pug
 
-    .candidate-name__first-name= name
-    .candidate-name__surname= surname
-    .candidate-name__profession= profession 
+mixin candidate(image, name, surname, profession)
+
+    +avatar(`${image}`)
+    .candidate-name 
+        .candidate-name__first-name= name
+        .candidate-name__surname= surname
+        .candidate-name__profession= profession 

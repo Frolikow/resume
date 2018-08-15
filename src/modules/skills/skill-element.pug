@@ -1,10 +1,10 @@
 mixin skill-element(name, value, length)
-
-    h5.skills__name= name
-    ul.skills__level
-        - for (var i = 1; i<=length; i++) {
-            if( i<=value )
-                li.skills__value.skills__value_color_blue
-            else
-                li.skills__value
-        - }
+    .skill
+        h5.skill__name= name
+        ul.skill__level
+            - for (var i = 1; i<=length; i++) {
+                if( i<=value )
+                    li.skill__value.skill__value_color_blue
+                else
+                    li.skill__value
+            - }
