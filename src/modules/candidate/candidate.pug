@@ -3,7 +3,7 @@ include ./../avatar/avatar.pug
 mixin candidate({image_url, name, surname, profession })
 
     +avatar({image:`${image_url}`})
-    .candidate-name 
-        .candidate-name__first-name= name
-        .candidate-name__surname= surname
-        .candidate-name__profession= profession 
+    .candidate 
+        .candidate__first-name= name
+        .candidate__surname= surname
+        .candidate__profession= profession 

@@ -1,10 +1,10 @@
 include ./modules/candidate/candidate.pug
 include ./modules/profile/profile.pug
 include ./modules/contact/contact.pug
-include ./modules/skills/skill-element.pug
-include ./modules/education/education-list.pug
-include ./modules/experience/experience-list.pug
-include ./modules/software/software-element.pug
+include ./modules/skill/skill.pug
+include ./modules/education/education.pug
+include ./modules/experience/experience.pug
+include ./modules/software/software.pug
 
 doctype html 
 html(lang="ru")
@@ -31,36 +31,36 @@ html(lang="ru")
                         website: 'www.yourweb.com' })
                 .resume-elements.resume-elements__skills
                     +title({name: 'skills'})
-                    +skill-element({name: 'creative',
+                    +skill({name: 'creative',
                                     value_scale: 9,
                                     length_scale: 12})
-                    +skill-element({name: 'teamwork', 
+                    +skill({name: 'teamwork', 
                                     value_scale: 11,
                                     length_scale: 12})
-                    +skill-element({name: 'innovate', 
+                    +skill({name: 'innovate', 
                                     value_scale: 6, 
                                     length_scale: 12})
-                    +skill-element({name: 'communication', 
+                    +skill({name: 'communication', 
                                     value_scale: 11, 
                                     length_scale: 12})
             .resume__column.resume__column_right
                 .resume-elements.resume-elements__education
                     +title({name: 'education'})
-                    +education-list
+                    +education
                 .resume-elements.resume-elements__experience
                     +title({name: 'experience'})
-                    +experience-list
+                    +experience
                 .resume-elements.resume-elements__software
                     +title({name: 'software'})
-                    +software-element({name: 'photoshop',
+                    +software({name: 'photoshop',
                                        percent_value: 95})
-                    +software-element({name: 'dreamweaver',
+                    +software({name: 'dreamweaver',
                                        percent_value: 85})
-                    +software-element({name: 'illustrator',
+                    +software({name: 'illustrator',
                                        percent_value: 75})
-                    +software-element({name: 'after effects',
+                    +software({name: 'after effects',
                                        percent_value: 70})
-                    +software-element({name: 'indesign',
+                    +software({name: 'indesign',
                                        percent_value: 60})
-                    +software-element({name: 'html & css3',
+                    +software({name: 'html & css3',
                                        percent_value: 95})

@@ -1,14 +1,14 @@
 mixin contact({address,e_mail,phone,website})
 
-    section.contact-list
-        .contact-list__data-name address
-        span.contact-list__data-value= address 
+    section.contact
+        .contact__data-name address
+        span.contact__data-value= address 
 
-        .contact-list__data-name e-mail
-        a.contact-list__data-value(href=`mailto:${e_mail}`)= e_mail 
+        .contact__data-name e-mail
+        a.contact__data-value(href=`mailto:${e_mail}`)= e_mail 
 
-        .contact-list__data-name phone
-        a.contact-list__data-value(href=`tel:${phone}`)= phone   
+        .contact__data-name phone
+        a.contact__data-value(href=`tel:${phone}`)= phone   
 
-        .contact-list__data-name website
-        a.contact-list__data-value(href=`${website}`)= website 
+        .contact__data-name website
+        a.contact__data-value(href=`${website}`)= website 
