@@ -1,7 +1,7 @@
-mixin education-element(data)
+mixin education-element({master_degree,date,university,description})
 
     li.education-item
-        span.education-item__degree-master= data.master_degree 
-        span.education-item__degree-date= ' // '+ data.date
-        p.education-item__university-name= data.university
-        p.education-item__university-text= data.description
+        span.education-item__degree-master= master_degree 
+        span.education-item__degree-date= ' // '+ date
+        p.education-item__university-name= university
+        p.education-item__university-text= description

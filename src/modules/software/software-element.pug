@@ -1,5 +1,5 @@
-mixin software-element(data)
+mixin software-element({name,percent_value})
     .software 
-        .software__level= data.name
+        .software__level= name
             .software__level-scale
-                .software__level-scale_filler(style = "width:" + data.percent_value + "%;")
+                .software__level-scale_filler(style = "width:" + percent_value + "%;")
