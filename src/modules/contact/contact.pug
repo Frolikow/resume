@@ -1,11 +1,11 @@
-mixin contact({address,e_mail,phone,website})
+mixin contact({address,eMail,phone,website})
 
     section.contact
         .contact__data-name address
         span.contact__data-value= address 
 
         .contact__data-name e-mail
-        a.contact__data-value(href=`mailto:${e_mail}`)= e_mail 
+        a.contact__data-value(href=`mailto:${eMail}`)= eMail 
 
         .contact__data-name phone
         a.contact__data-value(href=`tel:${phone}`)= phone   
