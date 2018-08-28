@@ -1,22 +1,22 @@
 mixin resume()
     .resume
         .resume__column.resume__column_left
-            .resume__elements.resume__elements_candidate
+            .resume__candidate
                 +candidate({imageUrl: 'mock-image', 
                             name: 'name here', 
                             surname: 'surname', 
                             profession: 'graphic designer'})
-            .resume__elements.resume__elements_profile
+            .resume__profile
                 +title({name: 'profile'})
                 +profile({text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Odit vero dolorem suscipit molestias asperiores placeat iusto ab aperiam, nemo, ipsum labore veniam. Nesciunt unde similique, odio facere! Ea, non aliquam.Lorem ipsum dolor sit amet,consectetur adipisicing elit.Minima odio dicta, esse. Omnis laudantium dolorem, quisquam saepe, cum magni,totam tenetur labore natus, suscipit debitis illo. Rem illo consequuntur consequatur.Lorem ipsum dolor sit amet, consectetur ', 
                             importantText: 'adipisicing elit. Saepe quaerat architecto fugit esse error placeat vel, iusto blanditiis, adipisci, eius maxime et tenetur odit. Aut deleniti voluptate sunt, mollitia rem!'})
-            .resume__elements.resume__elements_contact
+            .resume__contact
                 +title({name: 'contact'})
                 +contact({address: 'Main Street, City.', 
                             eMail: 'contact@domain.com',
                             phone: '555-555-555',
                             website: 'www.yourweb.com' })
-            .resume__elements.resume__elements_skills
+            .resume__skills
                 +title({name: 'skills'})
                 +skills({skills:[
                             {name: 'creative',
@@ -33,7 +33,7 @@ mixin resume()
                                 lengthScale: 12}
                         ]})
         .resume__column.resume__column_right
-            .resume__elements.resume__elements_education
+            .resume__education
                 +title({name: 'education'})
                 +education({education:[
                                 {masterDegree: 'master degree',
@@ -64,8 +64,8 @@ mixin resume()
                                     + 'Ipsam consectetur quae at ipsum blanditiis accusamus dicta,'
                                     + ' similique dolor. Repellat inventore unde ad, odit, '
                                     + 'optio tempora ex itaque alias reprehenderit. Minima.'}
-                                ]})
-            .resume__elements.resume__elements_experience
+                            ]})
+            .resume__experience
                 +title({name: 'experience'})
                 +experience({experience:[
                                 {companyName: 'company name',
@@ -87,7 +87,7 @@ mixin resume()
                                     + ' Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor.'
                                     +' Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. '}
                                 ]})
-            .resume__elements.resume__elements_software
+            .resume__software
                 +title({name: 'software'})
                 +softwares({softwares: [
                                 {name: 'photoshop',
