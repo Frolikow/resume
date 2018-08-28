@@ -1,0 +1,10 @@
+mixin skill({name, valueScale, lengthScale})
+
+    h5.skill__name= name
+    ul.skill__level
+        - for (var i = 1; i<=lengthScale; i++) {
+            if( i<=valueScale )
+                li.skill__value.skill__value_color_blue
+            else
+                li.skill__value
+        - }

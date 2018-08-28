@@ -18,18 +18,20 @@ mixin resume()
                             website: 'www.yourweb.com' })
             .resume__elements.resume__elements_skills
                 +title({name: 'skills'})
-                +skill({name: 'creative',
-                        valueScale: 9,
-                        lengthScale: 12})
-                +skill({name: 'teamwork', 
-                        valueScale: 11,
-                        lengthScale: 12})
-                +skill({name: 'innovate', 
-                        valueScale: 6, 
-                        lengthScale: 12})
-                +skill({name: 'communication', 
-                        valueScale: 11, 
-                        lengthScale: 12})
+                +skills({skills:[
+                            {name: 'creative',
+                                valueScale: 9,
+                                lengthScale: 12},
+                            {name: 'teamwork', 
+                                valueScale: 11,
+                                lengthScale: 12},
+                            {name: 'innovate', 
+                                valueScale: 6,
+                                lengthScale: 12},
+                            {name: 'communication', 
+                                valueScale: 11,
+                                lengthScale: 12}
+                        ]})
         .resume__column.resume__column_right
             .resume__elements.resume__elements_education
                 +title({name: 'education'})
@@ -87,15 +89,17 @@ mixin resume()
                                 ]})
             .resume__elements.resume__elements_software
                 +title({name: 'software'})
-                +software({name: 'photoshop',
-                            percentValue: 95})
-                +software({name: 'dreamweaver',
-                            percentValue: 85})
-                +software({name: 'illustrator',
-                            percentValue: 75})
-                +software({name: 'after effects',
-                            percentValue: 70})
-                +software({name: 'indesign',
-                            percentValue: 60})
-                +software({name: 'html & css3',
-                            percentValue: 95})
+                +softwares({softwares: [
+                                {name: 'photoshop',
+                                    percentValue: 95},
+                                {name: 'dreamweaver',
+                                    percentValue: 85},
+                                {name: 'illustrator',
+                                    percentValue: 75},
+                                {name: 'after effects',
+                                    percentValue: 70},
+                                {name: 'indesign',
+                                    percentValue: 60},
+                                {name: 'html & css3',
+                                    percentValue: 95}
+                            ]})

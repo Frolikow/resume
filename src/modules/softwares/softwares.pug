@@ -1,0 +1,8 @@
+include ./software/software
+
+mixin softwares({softwares})
+    each item in softwares
+        +software({
+            name: item.name,
+            percentValue: item.percentValue
+        })
