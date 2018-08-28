@@ -1,16 +1,9 @@
 include ./experience-item/experience-item.pug
 
-mixin experience()
+mixin experience({experience})
     ul.experience
-        +experience-item({companyName: 'company name',
-                            date:'Feb 2011 - Jun 2014',
-                            position: 'your job here',
-                            description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. '})
-        +experience-item({companyName:'company name',
-                            date: 'Feb 2011 - Jun 2014',
-                            position: 'your job here',
-                            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. '})
-        +experience-item({companyName: 'company name',
-                            date: 'Feb 2011 - Jun 2014',
-                            position: 'your job here',
-                            description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor. Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. '})
+        each item in experience
+            +experience-item({companyName: item.companyName,
+                                date: item.date,
+                                position: item.position,
+                                description: item.description})
