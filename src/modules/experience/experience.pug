@@ -3,7 +3,8 @@ include ./experience-item/experience-item.pug
 mixin experience({experience})
     ul.experience
         each item in experience
-            +experience-item({companyName: item.companyName,
-                                date: item.date,
-                                position: item.position,
-                                description: item.description})
+            li.experience-item
+                span.experience-item__company-name= item.companyName 
+                span.experience-item__company-date= ' // ' + item.date
+                p.experience-item__job-position= item.position
+                p.experience-item__short-description= item.description

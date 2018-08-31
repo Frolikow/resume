@@ -1,8 +1,12 @@
-include ./skill/skill
-
 mixin skills({skills})
     .skills
         each item in skills
-            +skill({name: item.name,
-                    valueScale: item.valueScale,
-                    lengthScale: item.lengthScale})
+            .skills__item
+                h5.skills__name= item.name
+                ul.skills__level
+                    - for (var i = 1; i<=item.lengthScale; i++) {
+                        if( i<=item.valueScale )
+                            li.skills__point.skills__point_filled
+                        else
+                            li.skills__point
+                    - }

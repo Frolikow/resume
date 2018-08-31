@@ -3,7 +3,7 @@ include ./software/software
 mixin softwares({softwares})
     .softwares
         each item in softwares
-            +software({
-                name: item.name,
-                percentValue: item.percentValue
-            })
+            .softwares__item
+                .softwares__level= item.name
+                    .softwares__scale
+                        .softwares__scale_filled(style = "width:" + item.percentValue + "%;")
