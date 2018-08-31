@@ -1,7 +1,8 @@
 include ./skill/skill
 
 mixin skills({skills})
-    each item in skills
-        +skill({name: item.name,
-                valueScale: item.valueScale,
-                lengthScale: item.lengthScale})
+    .skills
+        each item in skills
+            +skill({name: item.name,
+                    valueScale: item.valueScale,
+                    lengthScale: item.lengthScale})

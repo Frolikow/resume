@@ -5,7 +5,7 @@ mixin skill({name, valueScale, lengthScale})
         ul.skill__level
             - for (var i = 1; i<=lengthScale; i++) {
                 if( i<=valueScale )
-                    li.skill__scale.skill__scale_filler
+                    li.skill__point.skill__point_filled
                 else
-                    li.skill__scale
+                    li.skill__point
             - }
