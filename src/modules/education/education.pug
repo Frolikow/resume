@@ -1,8 +1,4 @@
-mixin education({education})
-    ul.education
-        each item in education
-            li.education-item
-                span.education-item__degree-master= item.masterDegree 
-                span.education-item__degree-date= ' // '+ item.date
-                p.education-item__university-name= item.university
-                p.education-item__short-description= item.description
+include ./../similar-list/similar-list
+
+mixin education({list})
+    +similar-list({listName: 'education', data: {list}})

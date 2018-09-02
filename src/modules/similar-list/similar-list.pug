@@ -1,0 +1,9 @@
+mixin similar-list({listName, data})
+
+    ul(class=`${listName}`)
+        each item in data.list
+            li(class=`${listName}__item`)
+                span(class=`${listName}__title`)= item.title 
+                span(class=`${listName}__date`)= ' // '+ item.date
+                p(class=`${listName}__short-info`)= item.shortInfo
+                p(class=`${listName}__description`)= item.description
