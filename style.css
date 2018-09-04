@@ -5,6 +5,300 @@
   src: url(styles/fonts/myriadPro.eot);
   src: url(styles/fonts/myriadPro.woff);
 }
+.avatar {
+  width: 14.375rem;
+  height: 14.375rem;
+  border: 0.07rem solid #036fbc;
+  border-radius: 100%;
+  margin: auto;
+}
+.avatar__filler {
+  border: 0.07rem solid #036fbc;
+  background-color: #036fbc;
+  margin: 0.875rem;
+  height: 12.5rem;
+  width: 12.5rem;
+  border-radius: 100%;
+}
+.candidate {
+  text-align: center;
+  line-height: 1.57rem;
+  text-transform: uppercase;
+  padding-top: 3rem;
+}
+.candidate__first-name {
+  font-size: 3.375rem;
+  word-spacing: 0.1875rem;
+  font-weight: 200;
+  letter-spacing: 0.0187rem;
+}
+.candidate__surname {
+  padding-top: 2rem;
+  font-size: 3.75rem;
+  letter-spacing: 0.1875rem;
+  font-weight: 700;
+}
+.candidate__profession {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.0625rem;
+  font-weight: bold;
+}
+.contact {
+  margin-bottom: 2rem;
+  margin-top: 0.9375rem;
+  text-align: left;
+}
+.contact__data-title,
+.contact__data-value {
+  display: inline-block;
+  margin: 0;
+}
+.contact__data-title {
+  color: #036fbc;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.375rem;
+  line-height: 3.375rem;
+  width: 29%;
+  padding-left: 0.3125rem;
+}
+.contact__data-value {
+  width: 60%;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.25rem;
+  letter-spacing: 0.0187rem;
+}
+.education {
+  padding-left: 3.875rem;
+  margin-bottom: 3.4375rem;
+}
+.education__item {
+  font-size: 5rem;
+  line-height: 2.5rem;
+}
+.education__title {
+  margin-left: -0.4375rem;
+  color: #036fbc;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  font-weight: bold;
+  letter-spacing: 0.1437rem;
+  word-spacing: -0.15rem;
+}
+.education__date {
+  font-size: 1.5rem;
+  letter-spacing: 0.0313rem;
+  padding-left: 0.5rem;
+  vertical-align: middle;
+}
+.education__short-info {
+  font-size: 1.625rem;
+  line-height: 1.1rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  margin-left: -0.4375rem;
+}
+.education__description {
+  width: 95%;
+  margin-top: 0.8125rem;
+  line-height: 1.125rem;
+  font-size: 0.875rem;
+  margin-left: -0.4375rem;
+  margin-bottom: 0.4063rem;
+}
+.experience {
+  padding-left: 3.875rem;
+  margin-bottom: 3.4375rem;
+  padding-top: 0.8125rem;
+}
+.experience__item {
+  font-size: 5rem;
+  line-height: 2.5rem;
+}
+.experience__title {
+  margin-left: -0.4375rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  font-weight: bold;
+  letter-spacing: 0.1437rem;
+  word-spacing: -0.15rem;
+}
+.experience__date {
+  font-size: 1.5rem;
+  letter-spacing: 0.0313rem;
+  padding-left: 0.5rem;
+  vertical-align: middle;
+}
+.experience__short-info {
+  font-size: 1.625rem;
+  line-height: 1.1rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  margin-left: -0.4375rem;
+}
+.experience__description {
+  width: 95%;
+  margin-top: 0.8125rem;
+  line-height: 1.125rem;
+  font-size: 0.875rem;
+  margin-left: -0.4375rem;
+  margin-bottom: 0.4063rem;
+}
+.profile {
+  width: 100%;
+  font-size: 0.9375rem;
+  line-height: 1.1875rem;
+  word-spacing: 0.075rem;
+  padding-bottom: 3.625rem;
+}
+.profile__content {
+  margin: 0.4375rem 1.875rem 0 0.4375rem;
+}
+.profile__important-info {
+  font-weight: bold;
+}
+.resume {
+  max-width: 74.375rem;
+  margin: auto;
+  margin-top: 4.8125rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.resume__column {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 3rem;
+}
+.resume__column_left {
+  width: 37%;
+  min-width: 25.625rem;
+  margin-top: 0.625rem;
+}
+.resume__column_right {
+  width: 40%;
+  min-width: 40.8125rem;
+}
+.resume__candidate {
+  margin-bottom: 2.5rem;
+}
+.resume__profile {
+  padding-top: 2.25rem;
+}
+.skills {
+  margin-bottom: 2.5rem;
+}
+.skills__item {
+  width: 100%;
+  padding-bottom: 0.125rem;
+}
+.skills__name {
+  margin: 1.1875rem 1.125rem 0.3125rem 0;
+  font-size: 1.625rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+.skills__level {
+  width: 78%;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+.skills__point {
+  border: 0.57rem solid #e7e7e7;
+  display: inline-block;
+  border-radius: 100%;
+  margin-right: 2.82%;
+}
+.skills__point_filled {
+  border: 0.56rem solid #036fbc;
+}
+.skills__point:last-child {
+  margin-right: 0;
+}
+.softwares {
+  width: 100%;
+  padding-left: 1%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.softwares__item {
+  margin-bottom: 0.1875rem;
+  margin-top: 1.375rem;
+  margin-left: 0.1875rem;
+  margin-right: 0.9375rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  max-width: 99%;
+  width: 45%;
+}
+.softwares__scale {
+  background-color: #e7e7e7;
+  width: 95%;
+  height: 1.43rem;
+  margin-top: 0.6875rem;
+}
+.softwares__scale_filled {
+  background-color: #036fbc;
+  height: 100%;
+  width: 100%;
+}
+.title {
+  width: 100%;
+  display: flex;
+}
+.title__icon {
+  width: 4.625rem;
+  height: 4.75rem;
+  background: url(styles/icons/icons.jpg) no-repeat;
+  padding-right: 3.75rem;
+}
+.title__icon_profile {
+  background-position: -0.5rem -0.6875rem;
+}
+.title__icon_contact {
+  background-position: -0.5rem -6.0625rem;
+}
+.title__icon_skills {
+  background-position: -0.5rem -11.5625rem;
+}
+.title__icon_education {
+  background-position: -0.5rem -16.875rem;
+}
+.title__icon_experience {
+  background-position: -0.5rem -22.1875rem;
+}
+.title__icon_software {
+  background-position: -0.6875rem -27.75rem;
+}
+.title__name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 4.625rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #036fbc;
+}
+.title__line {
+  margin-top: 1.875rem;
+  margin-left: 0.4375rem;
+  margin-right: 1.375rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: 0.3125rem;
+  background: #036fbc;
+  overflow: hidden;
+}
 html {
   font-size: 16px;
   color: #000;
@@ -13,228 +307,5 @@ html {
 }
 body {
   margin: 0;
-  padding: 0.7rem;
   text-align: center;
-}
-.bold {
-  font-weight: bold;
-}
-.resume {
-  margin: 2.85rem auto;
-}
-.resume__column {
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  min-width: 22rem;
-  padding: 2.5rem;
-  width: 50%;
-}
-.resume__columnLeft {
-  max-width: 25rem;
-}
-.resume__columnRight {
-  max-width: 39.3rem;
-}
-.content {
-  color: #000;
-}
-.title {
-  line-height: 3.57rem;
-  margin-left: 0;
-  margin-bottom: 0;
-  background: url(styles/icons/icons.jpg) no-repeat 0 0.5rem;
-  font-size: 2.14rem;
-  background-size: 5rem;
-  overflow: hidden;
-  padding-left: 4.28rem;
-  color: #036fbc;
-  margin-top: 2.86rem;
-  text-transform: uppercase;
-}
-.title__line {
-  overflow: hidden;
-}
-.title__line:after {
-  margin-right: -100%;
-  margin-bottom: 0.71rem;
-  margin-left: 0.71rem;
-  content: '';
-  display: inline-block;
-  box-sizing: border-box;
-  width: 100%;
-  height: 0.21rem;
-  background: #036fbc;
-}
-.candidate__photo {
-  width: 12.1rem;
-  height: 12.1rem;
-  border: 0.07rem solid #036fbc;
-  border-radius: 100%;
-  margin: auto;
-}
-.candidate__photo_inside {
-  border: 0.07rem solid #036fbc;
-  background-color: #036fbc;
-  margin: 0.67rem;
-  height: 10.6rem;
-  width: 10.6rem;
-  border-radius: 100%;
-}
-.candidate__name {
-  text-align: center;
-  line-height: 1.57rem;
-  text-transform: uppercase;
-  padding-top: 2.39rem;
-}
-.candidate__name_firstName {
-  font-size: 2.3rem;
-  font-weight: 200;
-}
-.candidate__name_surname {
-  padding-top: 0.5rem;
-  font-size: 2.4rem;
-  letter-spacing: 0.2rem;
-  font-weight: 700;
-}
-.candidate__name_proffesion {
-  font-size: 1rem;
-  letter-spacing: 0.05rem;
-}
-.titleProfile {
-  background-position: -0.45rem -0.5rem;
-}
-.titleContact {
-  background-position: -0.45rem -4.3rem;
-}
-.contact-table {
-  text-align: left;
-}
-.contact-question {
-  color: #036fbc;
-  padding-top: 1.78rem;
-  vertical-align: bottom;
-  text-transform: uppercase;
-}
-.contact-value {
-  padding-left: 2.14rem;
-  padding-top: 1.07rem;
-  vertical-align: bottom;
-}
-.titleSkills {
-  background-position: -0.45rem -8.1rem;
-}
-.content__skill {
-  text-align: center;
-}
-.skill {
-  margin-bottom: 0;
-  font-size: 1.28rem;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-.skill__level {
-  text-align: center;
-  margin-top: 0.35rem;
-  padding: 0;
-}
-.skill__value {
-  list-style: none;
-  border: 0.57rem solid #e7e7e7;
-  display: inline-block;
-  border-radius: 100%;
-  margin-right: 0.5rem;
-}
-.value_color-blue {
-  border-color: #036fbc;
-}
-.titleEducation {
-  background-position: -0.45rem -12rem;
-}
-.content__education {
-  padding-left: 0.57rem;
-  font-size: 1.28rem;
-}
-.education {
-  list-style: none;
-  background: url(styles/icons/list-style.jpg) no-repeat 0 0.1rem;
-  padding-left: 2.86rem;
-  background-size: 1.28rem;
-}
-.education__level_color-blue {
-  color: #036fbc;
-  text-transform: uppercase;
-}
-.education__university_font-courier {
-  margin-top: 0.35rem;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  font-family: "Courier";
-  text-transform: uppercase;
-}
-.education__university_content-lorem {
-  font-size: 1rem;
-}
-.education__job_content-lorem {
-  font-size: 1rem;
-}
-.titleExpirience {
-  background-position: -0.45rem -15.75rem;
-}
-.content__expirience {
-  padding-left: 0.57rem;
-  font-size: 1.43rem;
-}
-.expirience {
-  list-style: none;
-  background: url(styles/icons/list-style.jpg) no-repeat 0 0.1rem;
-  padding-left: 2.86rem;
-  background-size: 1.28rem;
-}
-.expirience__company-name {
-  text-transform: uppercase;
-}
-.expirience__job_font-courier {
-  margin-top: 0.35rem;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  font-family: "Courier";
-  text-transform: uppercase;
-}
-.titlesoftware {
-  background-position: -0.45rem -19.78rem;
-}
-.software__level {
-  display: inline-block;
-  margin: 1.43rem 1.43rem 0 0;
-  font-size: 1.28rem;
-  text-transform: uppercase;
-}
-.software__level_color-gray {
-  background-color: #e7e7e7;
-  width: 18rem;
-  height: 1.43rem;
-}
-.software__level_color-blue {
-  background-color: #036fbc;
-  height: 100%;
-  width: 100%;
-}
-.software__level_photoshop {
-  width: 95%;
-}
-.software__level_dreamweaver {
-  width: 85%;
-}
-.software__level_illustrator {
-  width: 75%;
-}
-.software__level_afterEffects {
-  width: 70%;
-}
-.software__level_indesign {
-  width: 60%;
-}
-.software__level_htmlCss3 {
-  width: 95%;
 }
