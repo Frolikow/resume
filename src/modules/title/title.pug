@@ -1,4 +1,5 @@
 mixin title({name})
-
-    div(class = `title title_${name}`)= name
-        span.title__line
+    .title
+        div(class= `title__icon title__icon_${name}`)
+        div(class = 'title__name')= name
+        .title__line
