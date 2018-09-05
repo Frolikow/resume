@@ -1,7 +1,4 @@
 mixin softwares(softwares)
     .softwares
         each item in softwares
-            .softwares__item
-                .softwares__level= item.name
-                    .softwares__scale
-                        .softwares__scale_filled(style = "width:" + item.percentValue + "%;")
+            +software-item(item)

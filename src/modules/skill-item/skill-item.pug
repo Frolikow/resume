@@ -1,0 +1,10 @@
+mixin skill-item(skill)
+    .skill-item
+        h5.skill-item__name= skill.name
+        ul.skill-item__level
+            - for (var i = 1; i<=skill.lengthScale; i++) {
+                if( i<=skill.valueScale )
+                    li.skill-item__point.skill-item__point_filled
+                else
+                    li.skill-item__point
+            - }
