@@ -2,104 +2,137 @@ mixin resume()
     .resume
         .resume__column.resume__column_left
             .resume__candidate
-                +candidate({imageUrl: 'mock-image', 
-                            name: 'name here', 
-                            surname: 'surname', 
-                            profession: 'graphic designer'})
+                +candidate({
+                    imageUrl: 'mock-image', 
+                    name: 'name here', 
+                    surname: 'surname', 
+                    profession: 'graphic designer'
+                })
             .resume__profile
-                +title({name: 'profile'})
-                +profile({text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Odit vero dolorem suscipit molestias asperiores placeat iusto ab aperiam, nemo, ipsum labore veniam. Nesciunt unde similique, odio facere! Ea, non aliquam.Lorem ipsum dolor sit amet,consectetur adipisicing elit. Ea, non aliquam.Lorem ipsum dolor sit amet,consectetur adipisicing elit.Minima odio dicta, esse. Omnis laudantium dolorem, quisquam saepe, cum magni,totam tenetur labore natus, suscipit debitis illo. Rem illo consequuntur consequatur.Lorem ipsum dolor sit amet, consectetur ', 
-                            importantText: 'adipisicing elit. Saepe quaerat architecto fugit esse error placeat vel, iusto blanditiis, adipisci, eius maxime et tenetur odit. Aut deleniti voluptate sunt, mollitia rem!'})
+                +title({
+                    name: 'profile'
+                })
+                +profile({
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Odit vero dolorem suscipit molestias asperiores placeat iusto ab aperiam, nemo, ipsum labore veniam. Nesciunt unde similique, odio facere! Ea, non aliquam.Lorem ipsum dolor sit amet,consectetur adipisicing elit. Ea, non aliquam.Lorem ipsum dolor sit amet,consectetur adipisicing elit.Minima odio dicta, esse. Omnis laudantium dolorem, quisquam saepe, cum magni,totam tenetur labore natus, suscipit debitis illo. Rem illo consequuntur consequatur.Lorem ipsum dolor sit amet, consectetur ', 
+                    importantText: 'adipisicing elit. Saepe quaerat architecto fugit esse error placeat vel, iusto blanditiis, adipisci, eius maxime et tenetur odit. Aut deleniti voluptate sunt, mollitia rem!'
+                })
             .resume__contact
-                +title({name: 'contact'})
-                +contact({address: 'Main Street, City.', 
-                            eMail: 'contact@domain.com',
-                            phone: '555-555-555',
-                            website: 'www.yourweb.com' })
+                +title({
+                    name: 'contact'
+                })
+                +contact({
+                    address: 'Main Street, City.', 
+                    eMail: 'contact@domain.com',
+                    phone: '555-555-555',
+                    website: 'www.yourweb.com' 
+                })
             .resume__skills
-                +title({name: 'skills'})
-                +skills({skills:[
-                            {name: 'creative',
-                                valueScale: 9,
-                                lengthScale: 12},
-                            {name: 'teamwork', 
-                                valueScale: 11,
-                                lengthScale: 12},
-                            {name: 'innovate', 
-                                valueScale: 6,
-                                lengthScale: 12},
-                            {name: 'communication', 
-                                valueScale: 11,
-                                lengthScale: 12}
-                        ]})
+                +title({
+                    name: 'skills'
+                })
+                +skills([
+                    {
+                        name: 'creative',
+                        valueScale: 9,
+                        lengthScale: 12
+                    },{
+                        name: 'teamwork', 
+                        valueScale: 11,
+                        lengthScale: 12
+                    },{
+                        name: 'innovate', 
+                        valueScale: 6,
+                        lengthScale: 12
+                    },{
+                        name: 'communication', 
+                        valueScale: 11,
+                        lengthScale: 12
+                    }
+                ])
         .resume__column.resume__column_right
             .resume__education
-                +title({name: 'education'})
-                +education({list:[
-                                {title: 'master degree',
-                                    date: 'Feb 2010 - Jun 2014',
-                                    shortInfo: 'university name',
-                                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' 
-                                    + 'Ipsam consectetur quae at ipsum blanditiis accusamus dicta,'
-                                    + ' similique dolor. Repellat inventore unde ad, odit, '
-                                    + 'optio tempora ex itaque alias reprehenderit. Minima.'},
-                                {title: 'master degree',
-                                    date: 'Feb 2011 - Jun 2014',
-                                    shortInfo: 'university name',
-                                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' 
-                                    + 'Ipsam consectetur quae at ipsum blanditiis accusamus dicta,'
-                                    + ' similique dolor. Repellat inventore unde ad, odit, '
-                                    + 'optio tempora ex itaque alias reprehenderit. Minima.'},
-                                {title: 'master degree',
-                                    date: 'Feb 2012 - Jun 2014',
-                                    shortInfo: 'university name',
-                                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' 
-                                    + 'Ipsam consectetur quae at ipsum blanditiis accusamus dicta,'
-                                    + ' similique dolor. Repellat inventore unde ad, odit, '
-                                    + 'optio tempora ex itaque alias reprehenderit. Minima.'},
-                                {title: 'master degree',
-                                    date: 'Feb 2013 - Jun 2014',
-                                    shortInfo: 'university name',
-                                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' 
-                                    + 'Ipsam consectetur quae at ipsum blanditiis accusamus dicta,'
-                                    + ' similique dolor. Repellat inventore unde ad, odit, '
-                                    + 'optio tempora ex itaque alias reprehenderit. Minima.'}
-                            ]})
+                +title({
+                    name: 'education'
+                })
+                +education([
+                    {
+                        title: 'master degree',
+                        date: 'Feb 2010 - Jun 2014',
+                        shortInfo: 'university name',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' 
+                        + 'Ipsam consectetur quae at ipsum blanditiis accusamus dicta,'
+                        + ' similique dolor. Repellat inventore unde ad, odit, '
+                        + 'optio tempora ex itaque alias reprehenderit. Minima.'
+                    },{
+                        title: 'master degree',
+                        date: 'Feb 2011 - Jun 2014',
+                        shortInfo: 'university name',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' 
+                        + 'Ipsam consectetur quae at ipsum blanditiis accusamus dicta,'
+                        + ' similique dolor. Repellat inventore unde ad, odit, '
+                        + 'optio tempora ex itaque alias reprehenderit. Minima.'
+                    },{
+                        title: 'master degree',
+                        date: 'Feb 2012 - Jun 2014',
+                        shortInfo: 'university name',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' 
+                        + 'Ipsam consectetur quae at ipsum blanditiis accusamus dicta,'
+                        + ' similique dolor. Repellat inventore unde ad, odit, '
+                        + 'optio tempora ex itaque alias reprehenderit. Minima.'
+                    },{
+                        title: 'master degree',
+                        date: 'Feb 2013 - Jun 2014',
+                        shortInfo: 'university name',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' 
+                        + 'Ipsam consectetur quae at ipsum blanditiis accusamus dicta,'
+                        + ' similique dolor. Repellat inventore unde ad, odit, '
+                        + 'optio tempora ex itaque alias reprehenderit. Minima.'
+                    }
+                ])
             .resume__experience
-                +title({name: 'experience'})
-                +experience({list:[
-                                {title: 'company name',
-                                    date: 'Feb 2011 - Jun 2014',
-                                    shortInfo: 'your job here',
-                                    description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-                                    + ' Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor.'
-                                    +' Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. '},
-                                {title: 'company name',
-                                    date: 'Feb 2012 - Jun 2014',
-                                    shortInfo: 'your job here',
-                                    description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-                                    + ' Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor.'
-                                    +' Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. '},
-                                {title: 'company name',
-                                    date: 'Feb 2013 - Jun 2014',
-                                    shortInfo: 'your job here',
-                                    description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-                                    + ' Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor.'
-                                    +' Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. '}
-                                ]})
+                +title({
+                    name: 'experience'
+                })
+                +experience([
+                    {
+                        title: 'company name',
+                        date: 'Feb 2011 - Jun 2014',
+                        shortInfo: 'your job here',
+                        description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+                        + ' Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor.'
+                        +' Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. '
+                    },{
+                        title: 'company name',
+                        date: 'Feb 2012 - Jun 2014',
+                        shortInfo: 'your job here',
+                        description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+                        + ' Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor.'
+                        +' Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. '
+                    },{
+                        title: 'company name',
+                        date: 'Feb 2013 - Jun 2014',
+                        shortInfo: 'your job here',
+                        description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+                        + ' Ipsam consectetur quae at ipsum blanditiisaccusamus dicta, similique dolor.'
+                        +' Repellat inventore unde ad, odit, optio tempora ex itaque alias reprehenderit. Minima. '
+                    }
+                ])
             .resume__software
-                +title({name: 'software'})
-                +softwares({softwares: [
-                                {name: 'photoshop',
-                                    percentValue: 95},
-                                {name: 'dreamweaver',
-                                    percentValue: 85},
-                                {name: 'illustrator',
-                                    percentValue: 75},
-                                {name: 'after effects',
-                                    percentValue: 70},
-                                {name: 'indesign',
-                                    percentValue: 60},
-                                {name: 'html & css3',
-                                    percentValue: 95}
-                            ]})
+                +title({
+                    name: 'software'
+                })
+                +softwares([
+                    {
+                        name: 'photoshop',percentValue: 95
+                    },{
+                        name: 'dreamweaver',percentValue: 85
+                    },{
+                        name: 'illustrator',percentValue: 75
+                    },{
+                        name: 'after effects',percentValue: 70
+                    },{
+                        name: 'indesign',percentValue: 60
+                    },{
+                        name: 'html & css3',percentValue: 95
+                    }
+                ])
