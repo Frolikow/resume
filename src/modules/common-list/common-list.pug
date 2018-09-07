@@ -1,0 +1,9 @@
+mixin common-list({listName, data})
+
+    ul(class=`common-list ${listName}-list`)
+        each item in data
+            li(class=`${listName}-list__item common-list__item`)
+                span(class=`${listName}-list__title common-list__title`)= item.title 
+                span(class=`${listName}-list__date common-list__date`)= ' // '+ item.date
+                p(class=`${listName}-list__short-info common-list__short-info`)= item.shortInfo
+                p(class=`${listName}-list__description common-list__description`)= item.description
