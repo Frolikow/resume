@@ -2,7 +2,7 @@ include ./../avatar/avatar.pug
 
 mixin candidate({imageUrl, name, surname, profession })
 
-    +avatar({image:`${imageUrl}`})
+    +avatar({image: imageUrl})
     .candidate 
         .candidate__first-name= name
         .candidate__surname= surname
