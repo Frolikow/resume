@@ -1,28 +1,52 @@
 .resume
-  max-width 74.375rem
-  margin auto
-  margin-top 4.8125rem  
+  width 75rem
+  margin 1.875rem auto
+  box-sizing border-box
   display flex
-  justify-content center
-  flex-wrap wrap
+  flex-direction row
+  justify-content space-around
+  align-items flex-start
+  
+  @media(min-width: 93.75rem)
+    width 62%
+
+  @media(max-width: 93.75rem) and (min-width 75rem)
+    width 80%
+
+  @media(max-width: 75rem) and (min-width: 50rem)
+    width 87%
+
+  @media(max-width: 50rem)
+    flex-wrap wrap
+    width 98%
+
 
   &__column 
-    display inline-block 
     vertical-align top 
     text-align left 
-    margin-left 3rem
 
-  &__column_left
-    width 37%
-    min-width 25.625rem
-    margin-top 0.625rem
+    &_left
+      width 37%
+      
+      @media(max-width: 75rem) and (min-width: 50rem)
+        width 45%
+      
+      @media(max-width 50rem)
+        width 100%
+        margin auto
 
-  &__column_right 
-    width 40%
-    min-width 40.8125rem
+    &_right 
+      width 55%
+
+      @media(max-width: 75rem) and (min-width: 50rem)
+        width 50%
+
+      @media(max-width 50rem)
+        flex auto
 
   &__candidate
     margin-bottom 2.5rem 
 
   &__profile
     padding-top 2.25rem
+
