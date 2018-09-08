@@ -44,6 +44,52 @@
   letter-spacing: 0.0625rem;
   font-weight: bold;
 }
+.common-list {
+  padding-left: 3.875rem;
+  margin-bottom: 3.4375rem;
+}
+.common-list_experience {
+  padding-top: 0.8125rem;
+}
+.common-list__item {
+  font-size: 5rem;
+  line-height: 2.5rem;
+}
+.common-list__title {
+  margin-left: -0.4375rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  font-weight: bold;
+  letter-spacing: 0.1437rem;
+  word-spacing: -0.15rem;
+}
+.common-list__title_education {
+  color: #036fbc;
+}
+.common-list__date {
+  display: inline-block;
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.0313rem;
+  vertical-align: middle;
+}
+.common-list__short-info {
+  font-size: 1.625rem;
+  line-height: 1.1rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  margin-left: -0.4375rem;
+}
+.common-list__description {
+  width: 95%;
+  margin-top: 0.8125rem;
+  line-height: 1.125rem;
+  font-size: 0.875rem;
+  margin-left: -0.4375rem;
+  margin-bottom: 0.4063rem;
+}
 .contact {
   margin-bottom: 2rem;
   margin-top: 0.9375rem;
@@ -70,86 +116,6 @@
   font-size: 1.25rem;
   letter-spacing: 0.0187rem;
 }
-.education {
-  padding-left: 3.875rem;
-  margin-bottom: 3.4375rem;
-}
-.education__item {
-  font-size: 5rem;
-  line-height: 2.5rem;
-}
-.education__title {
-  margin-left: -0.4375rem;
-  color: #036fbc;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  vertical-align: middle;
-  font-weight: bold;
-  letter-spacing: 0.1437rem;
-  word-spacing: -0.15rem;
-}
-.education__date {
-  font-size: 1.5rem;
-  letter-spacing: 0.0313rem;
-  padding-left: 0.5rem;
-  vertical-align: middle;
-}
-.education__short-info {
-  font-size: 1.625rem;
-  line-height: 1.1rem;
-  margin-top: 0.3125rem;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  margin-left: -0.4375rem;
-}
-.education__description {
-  width: 95%;
-  margin-top: 0.8125rem;
-  line-height: 1.125rem;
-  font-size: 0.875rem;
-  margin-left: -0.4375rem;
-  margin-bottom: 0.4063rem;
-}
-.experience {
-  padding-left: 3.875rem;
-  margin-bottom: 3.4375rem;
-  padding-top: 0.8125rem;
-}
-.experience__item {
-  font-size: 5rem;
-  line-height: 2.5rem;
-}
-.experience__title {
-  margin-left: -0.4375rem;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  vertical-align: middle;
-  font-weight: bold;
-  letter-spacing: 0.1437rem;
-  word-spacing: -0.15rem;
-}
-.experience__date {
-  font-size: 1.5rem;
-  letter-spacing: 0.0313rem;
-  padding-left: 0.5rem;
-  vertical-align: middle;
-}
-.experience__short-info {
-  font-size: 1.625rem;
-  line-height: 1.1rem;
-  margin-top: 0.3125rem;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  margin-left: -0.4375rem;
-}
-.experience__description {
-  width: 95%;
-  margin-top: 0.8125rem;
-  line-height: 1.125rem;
-  font-size: 0.875rem;
-  margin-left: -0.4375rem;
-  margin-bottom: 0.4063rem;
-}
 .profile {
   width: 100%;
   font-size: 0.9375rem;
@@ -164,27 +130,65 @@
   font-weight: bold;
 }
 .resume {
-  max-width: 74.375rem;
-  margin: auto;
-  margin-top: 4.8125rem;
+  width: 75rem;
+  margin: 1.875rem auto;
+  box-sizing: border-box;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+@media (min-width: 93.75rem) {
+  .resume {
+    width: 62%;
+  }
+}
+@media (max-width: 93.75rem) and (min-width: 75rem) {
+  .resume {
+    width: 80%;
+  }
+}
+@media (max-width: 75rem) and (min-width: 50rem) {
+  .resume {
+    width: 87%;
+  }
+}
+@media (max-width: 50rem) {
+  .resume {
+    flex-wrap: wrap;
+    width: 98%;
+  }
 }
 .resume__column {
-  display: inline-block;
   vertical-align: top;
   text-align: left;
-  margin-left: 3rem;
 }
 .resume__column_left {
   width: 37%;
-  min-width: 25.625rem;
-  margin-top: 0.625rem;
+}
+@media (max-width: 75rem) and (min-width: 50rem) {
+  .resume__column_left {
+    width: 45%;
+  }
+}
+@media (max-width: 50rem) {
+  .resume__column_left {
+    width: 100%;
+    margin: auto;
+  }
 }
 .resume__column_right {
-  width: 40%;
-  min-width: 40.8125rem;
+  width: 55%;
+}
+@media (max-width: 75rem) and (min-width: 50rem) {
+  .resume__column_right {
+    width: 50%;
+  }
+}
+@media (max-width: 50rem) {
+  .resume__column_right {
+    flex: auto;
+  }
 }
 .resume__candidate {
   margin-bottom: 2.5rem;
@@ -192,46 +196,41 @@
 .resume__profile {
   padding-top: 2.25rem;
 }
-.skills {
-  margin-bottom: 2.5rem;
-}
-.skills__item {
+.skill-item {
   width: 100%;
   padding-bottom: 0.125rem;
+  margin: 0 auto;
 }
-.skills__name {
-  margin: 1.1875rem 1.125rem 0.3125rem 0;
+.skill-item__name {
+  margin: 1.1875rem auto 0.3125rem auto;
   font-size: 1.625rem;
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
 }
-.skills__level {
+.skill-item__level {
   width: 78%;
   display: flex;
   margin: 0 auto;
+  justify-content: center;
   padding: 0;
 }
-.skills__point {
+.skill-item__point {
   border: 0.57rem solid #e7e7e7;
   display: inline-block;
   border-radius: 100%;
   margin-right: 2.82%;
 }
-.skills__point_filled {
+.skill-item__point_filled {
   border: 0.56rem solid #036fbc;
 }
-.skills__point:last-child {
+.skill-item__point:last-child {
   margin-right: 0;
 }
-.softwares {
-  width: 100%;
-  padding-left: 1%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.skills {
+  margin-bottom: 2.5rem;
 }
-.softwares__item {
+.software-item {
   margin-bottom: 0.1875rem;
   margin-top: 1.375rem;
   margin-left: 0.1875rem;
@@ -242,16 +241,22 @@
   max-width: 99%;
   width: 45%;
 }
-.softwares__scale {
+.software-item__scale {
   background-color: #e7e7e7;
   width: 95%;
   height: 1.43rem;
   margin-top: 0.6875rem;
 }
-.softwares__scale_filled {
+.software-item__level {
   background-color: #036fbc;
   height: 100%;
+}
+.softwares {
   width: 100%;
+  padding-left: 1%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .title {
   width: 100%;
@@ -261,7 +266,7 @@
   width: 4.625rem;
   height: 4.75rem;
   background: url(styles/icons/icons.jpg) no-repeat;
-  padding-right: 3.75rem;
+  padding-right: 0.625rem;
 }
 .title__icon_profile {
   background-position: -0.5rem -0.6875rem;
@@ -294,7 +299,7 @@
   margin-left: 0.4375rem;
   margin-right: 1.375rem;
   box-sizing: border-box;
-  width: 100%;
+  flex: auto;
   height: 0.3125rem;
   background: #036fbc;
   overflow: hidden;
