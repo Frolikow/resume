@@ -1,9 +1,9 @@
 mixin common-list({listName, data})
 
-    ul(class=`common-list ${listName}-list`)
+    ul(class=`common-list common-list_${listName}`)
         each item in data
-            li(class=`${listName}-list__item common-list__item`)
-                span(class=`${listName}-list__title common-list__title`)= item.title 
-                p(class=`${listName}-list__date common-list__date`)= '// '+ item.date
-                p(class=`${listName}-list__short-info common-list__short-info`)= item.shortInfo
-                p(class=`${listName}-list__description common-list__description`)= item.description
+            li(class=`common-list__item common-list__item_${listName}`)
+                span(class=`common-list__title common-list__title_${listName}`)= item.title 
+                p(class=`common-list__date common-list__date_${listName}`)= '// '+ item.date
+                p(class=`common-list__short-info common-list__short-info_${listName}`)= item.shortInfo
+                p(class=`common-list__description common-list__description_${listName}`)= item.description
