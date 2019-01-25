@@ -1,0 +1,9 @@
+mixin timeline-list({listName, data})
+
+    ul(class =`timeline-list timeline-list_${listName}`)
+        each item in data
+            li(class =`timeline-list__item timeline-list__item_${listName}`)
+                span(class =`timeline-list__title timeline-list__title_${listName}`)= item.title 
+                p(class =`timeline-list__date timeline-list__date_${listName}`)= '// ' + item.date
+                p(class =`timeline-list__short-info timeline-list__short-info_${listName}`)= item.shortInfo
+                p(class =`timeline-list__description timeline-list__description_${listName}`)= item.description
